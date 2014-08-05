@@ -1,0 +1,52 @@
+<!--
+******* PLEASE READ ********
+
+- The below content shows up on either the home page, or on the about-rhinocoders page. I'm making
+use of the pageType SSI variable set at the top of all index files, to display the proper content block.
+- Your photo should be a JPG, 155px x 155px, and optimized for the web. Place your photo in the /rhinocoders/assets/img/team/
+directory, and please do not overwrite the YOUR-PHOTO.jpg file.
+
+(when finished updaetd, please remove this entire comment box)
+-->
+
+<!--#if expr='$pageType = home'-->
+
+	<!-- home-page meet the team content area -->
+    <div class="pi-col-xs-6 pi-col-sm-3 pi-padding-bottom-20">
+
+        <div class="pi-img-w pi-img-round-corners pi-img-shadow">
+            <img src="/rhinocoders/assets/img/team/YOUR-PHOTO.jpg" alt="YOUR NAME">
+            <div class="pi-img-overlay pi-img-overlay-darker">
+                <div class="pi-caption-centered">
+                    <div>
+                        <a href="/rhinocoders/about-rhinocoders/#jasonlaw">
+                            <span class="pi-caption-icon pi-caption-icon-small pi-caption-scale icon-user-4"></span>
+                        </a>
+                        <p>REPLACE THIS TEXT... 1 sentence snippet of something fun and random about you</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h6 class="pi-weight-700 pi-uppercase pi-letter-spacing">YOUR NAME</h6>	
+        <p class="pi-italic pi-text-base">YOUR TITLE</p>
+
+    </div>
+
+    <div class="pi-clearfix pi-visible-xs"></div>
+
+<!--#else -->
+
+	<!-- about-rhinocoders team content area -->
+    <a id="jasonlaw"></a>
+    <div class="pi-img-w pi-img-round-corners pi-img-left pi-margin-top-5 pi-shadow-effect4" style="width: 155px;">
+        <img src="/rhinocoders/assets/img/team/YOUR-PHOTO.jpg" alt="YOUR NAME"/>
+    </div>
+    <h3 class="h4 pi-margin-bottom-5">
+    	<a href="#" class="pi-link-no-style">YOUR NAME</a>
+    </h3>   
+    <p class="pi-italic pi-text-base pi-margin-bottom-10">YOUR TITLE</p>
+    <p>REPLACE THIS TEXT WITH... A paragraph of atleast 5-7 sentences about your career inspirations, hobbies that you may have, etc... Ut et ultricies mauris. Curabitur molestie, nisl nec porta lobortis, elit lectus adipiscing nunc, sed iaculis elit nisl ac orci. Vivamus vel sem venenatis, luctus sapien eget, tincidunt libero. Cras commodo leo ac malesuada consectetur. Nulla ornare mauris vel nibh tincidunt, ac cursus erat gravida. Quisque a suscipit sem. Donec sodales odio nisi, quis varius nibh aliquet vel. </p>
+
+    <hr class="pi-divider pi-divider-dashed">
+
+<!--#endif -->

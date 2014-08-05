@@ -1,0 +1,47 @@
+/*ony for one corner, use this variable several time for other corners*/
+body {
+  position: relative;
+}
+.pi-main-header-w {
+  position: relative;
+  z-index: 301;
+}
+.pi-section-header-w {
+  position: relative;
+}
+.pi-row-duplication {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  -ms-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+.pi-fixed .pi-header-row-fixed {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.pi-row-duplication-sm {
+  top: -48px;
+}
+.pi-row-duplication-md {
+  top: -70px;
+}
+.pi-row-duplication-lg {
+  top: -100px;
+}
+.pi-header-row-reduced {
+  top: -70px;
+}
+.pi-header-row-reduced .pi-section-header-lg {
+  height: 70px;
+}
+.pi-fixed-header-rows-shown .pi-row-duplication {
+  top: 0;
+  opacity: 1;
+}
