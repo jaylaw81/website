@@ -158,10 +158,10 @@ article#content img {
   margin-left: -43px;
 }
 
-article#content span.fontawesome-book {
+article#content span.icon-book {
   font-size: 16px;
   position: relative;
-  top: -3px;
+  top: -1px;
   color: #e86343;
 }
 
