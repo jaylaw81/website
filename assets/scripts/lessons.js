@@ -43,8 +43,8 @@ var lessons = {
                         if(topPos <= 50){
 
                             elemSel = $(this).attr('id');
-                            $('span[class="fontawesome-circle"]').attr('class', 'fontawesome-circle blank');
-                            $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'fontawesome-circle')
+                            $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
+                            $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
 
                             if(elemSel != elemSel){
                                 return false;
@@ -57,7 +57,7 @@ var lessons = {
 
         });
 
-        $('.fontawesome-upload').on('click', function(){
+        $('.up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         });
@@ -68,8 +68,8 @@ var lessons = {
             e.stopImmediatePropagation();
             lessons.isScrolling = true;
 
-            $('span[class="fontawesome-circle"]').attr('class', 'fontawesome-circle blank');
-            $('span', this).attr('class', 'fontawesome-circle');
+            $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
+            $('span', this).attr('class', 'icon-circle');
             var anchor = $('a', this).attr("href");
 
             $("html, body").animate({ scrollTop: $(anchor).offset().top - 50 }, "slow", function(){
@@ -78,7 +78,7 @@ var lessons = {
 
         });
 
-        $('.fontawesome-reply').on('click', function(e){
+        $('.icon-reply').on('click', function(e){
             window.location = "/rhinocoders/the-series/";
         });
     },
@@ -89,7 +89,7 @@ var lessons = {
             for(item in data.navItems){
                 var navLabel = data.navItems[item].labelName;
                 var navSection = data.navItems[item].section;
-                var html = '<li><span class="fontawesome-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
+                var html = '<li><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
                 $('#navigation ul').append(html);
             }
 
