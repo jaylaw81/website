@@ -43,9 +43,10 @@ var lessons = {
                         if(topPos <= 50){
 
                             elemSel = $(this).attr('id');
+                            $('#navigation li').removeClass('active');
                             $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
                             $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
-
+                            $('a[href="#'+elemSel+'"]').parent().addClass('active');
                             if(elemSel != elemSel){
                                 return false;
                             }
@@ -68,8 +69,11 @@ var lessons = {
             e.stopImmediatePropagation();
             lessons.isScrolling = true;
 
+            $('#navigation li').removeClass('active');
             $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
             $('span', this).attr('class', 'icon-circle');
+            $(this).addClass('active');
+
             var anchor = $('a', this).attr("href");
 
             $("html, body").animate({ scrollTop: $(anchor).offset().top - 50 }, "slow", function(){
@@ -89,7 +93,7 @@ var lessons = {
             for(item in data.navItems){
                 var navLabel = data.navItems[item].labelName;
                 var navSection = data.navItems[item].section;
-                var html = '<li><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
+                var html = '<li class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
                 $('#navigation ul').append(html);
             }
 
