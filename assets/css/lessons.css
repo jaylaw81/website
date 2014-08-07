@@ -126,17 +126,19 @@ article#content {
   height: 100%;
 }
 
+article#content section {
+  margin-bottom: 100px;
+}
+
 article#content h3 {
   font-size: 20px;
   text-transform: uppercase;
-
   overflow: hidden;
   letter-spacing: 1px;
   line-height: 1.4em;
   background-color: white;
   display: inline-block;
   width: 100%;
-
   font-weight: 600;
 }
 
