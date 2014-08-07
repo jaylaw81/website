@@ -71,7 +71,7 @@ section#navigation li {
   left: 0;
   float: left;
   clear: both;
-  width: 96%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -79,7 +79,7 @@ section#navigation li a {
   text-decoration: none;
   font-size: 14px;
   position: relative;
-  top: 4px;
+  top: 0px;
   left: 10px;
   color: #fff;
   display: block;
@@ -118,8 +118,28 @@ article#content {
 }
 
 article#content h3 {
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
+
+  overflow: hidden;
+  letter-spacing: 1px;
+  line-height: 1.4em;
+  background-color: white;
+  display: inline-block;
+  width: 100%;
+
+  font-weight: 600;
+}
+
+article#content h3:after {
+  position: relative;
+  left: 18px;
+  content: "";
+  display: inline-block;
+  width: 200%;
+  height: 0.75em;
+  margin: 0 -200% 0 0;
+  background: white url('../img/bg-heading.png');
 }
 
 article#content dt {
