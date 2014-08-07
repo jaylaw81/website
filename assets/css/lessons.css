@@ -75,10 +75,10 @@ section#navigation li {
      -o-transform-style:preserve-3d;
         transform-style:preserve-3d;
 /*transition*/
--webkit-transition:all .2s linear;
-   -moz-transition:all .2s linear;
-     -o-transition:all .2s linear;
-        transition:all .2s linear;
+-webkit-transition:all .2s ease-in-out;
+   -moz-transition:all .2s ease-in-out;
+     -o-transition:all .2s ease-in-out;
+        transition:all .2s ease-in-out;
 }
 
 
@@ -147,10 +147,15 @@ section#navigation li span.icon-circle {
      -o-transform-style:preserve-3d;
         transform-style:preserve-3d;
 /*transition*/
--webkit-transition:all .2s linear;
-   -moz-transition:all .2s linear;
-     -o-transition:all .2s linear;
-        transition:all .2s linear;
+-webkit-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+   -moz-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+     -o-transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+        transition: all 500ms cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
+
+-webkit-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+   -moz-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+     -o-transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+        transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955); /* easeInOutQuad */
 /*perspective*/
 -webkit-perspective:1000;
    -moz-perspective:1000;
