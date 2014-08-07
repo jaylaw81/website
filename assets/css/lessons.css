@@ -1,5 +1,16 @@
 @import url(hover.css);
 
+@media print {
+  .icon-up-circled2,
+  #header,
+  .pi-section-header,
+  #navigation {
+    display: none;
+  }
+
+  article#content section {page-break-after: always;}
+}
+
 .pi-section-header-lg-w {display: none}
 .pi-section-header-sm-w {
   position: fixed !important;
@@ -186,7 +197,7 @@ article#content section:last-of-type {
 }
 
 article#content h3 {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   overflow: hidden;
   letter-spacing: 1px;
