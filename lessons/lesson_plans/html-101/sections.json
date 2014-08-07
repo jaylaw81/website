@@ -35,6 +35,10 @@
         {
             "labelName" : "HTML Headings",
             "section" : "intro-headings"
+        },
+        {
+            "labelName" : "HTML 5 Specific Tags"
+            "section" : "intro-html5"
         }
     ]
 }
