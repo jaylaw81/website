@@ -88,11 +88,12 @@ var lessons = {
     },
 
     getNav: function(lessonPlan){
-        $.getJSON('/rhinocoders/lessons/lesson_plans/' + lessonPlan + '/sections.json', function(data){
 
-            for(item in data.navItems){
-                var navLabel = data.navItems[item].labelName;
-                var navSection = data.navItems[item].section;
+        $.getJSON('/rhinocoders/lessons/lesson_plans/' + lessonPlan + '/sections.json', function(json){
+
+            for(item in json.navItems){
+                var navLabel = json.navItems[item].labelName;
+                var navSection = json.navItems[item].section;
                 var html = '<li class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
                 $('#navigation ul').append(html);
             }
