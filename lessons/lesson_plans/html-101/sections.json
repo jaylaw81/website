@@ -29,7 +29,11 @@
             "section" : "intro-tags"
         },
         {
-            "labelName" : "Headings",
+            "labelName" : "HTML Attributes",
+            "section" : "intro-attributes"
+        },
+        {
+            "labelName" : "HTML Headings",
             "section" : "intro-headings"
         }
     ]

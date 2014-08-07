@@ -179,10 +179,10 @@ article#content span.icon-book {
 
 /* back to classes */
 
-.up-circled2 {
+.icon-up-circled2 {
   display: none;
   position: fixed;
-  bottom: -3px;
+  bottom: -40px;
   left: 50%;
   z-index: 999;
   cursor: pointer;
@@ -190,7 +190,7 @@ article#content span.icon-book {
   color: rgba(0,0,0,.2);
 }
 
-.up-circled2:hover {
+.icon-up-circled2:hover {
   color: rgba(0,0,0,.3);
 }
 

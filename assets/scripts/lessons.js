@@ -31,9 +31,9 @@ var lessons = {
             $window = $(window);
 
             if(height  > 200) {
-                $('.fontawesome-upload').fadeIn(200);
+                $('.icon-up-circled2').fadeIn(200);
             } else {
-                $('.fontawesome-upload').fadeOut(200);
+                $('.icon-up-circled2').fadeOut(200);
             }
 
             $('.section').each(function(){
@@ -58,7 +58,7 @@ var lessons = {
 
         });
 
-        $('.up-circled2').on('click', function(){
+        $('.icon-up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         });
