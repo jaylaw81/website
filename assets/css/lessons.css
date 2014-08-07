@@ -180,6 +180,10 @@ article#content section {
   margin-bottom: 100px;
 }
 
+article#content section:last-of-type {
+  margin-top: 100px;
+}
+
 article#content h3 {
   font-size: 20px;
   text-transform: uppercase;
@@ -190,6 +194,11 @@ article#content h3 {
   display: inline-block;
   width: 100%;
   font-weight: 600;
+}
+
+article#content h5 {
+  font-weight: 600;
+  color: #21adde;
 }
 
 article#content h3:after {
@@ -206,6 +215,7 @@ article#content h3:after {
 article#content dt {
   font-weight: bold;
   font-size: 18px;
+  color: #21adde;
 }
 
 article#content dd {

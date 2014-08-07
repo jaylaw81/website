@@ -30,7 +30,7 @@ var lessons = {
             var height = $(window).scrollTop();
             $window = $(window);
 
-            if(height  > 200) {
+            if(height > 200) {
                 $('.icon-up-circled2').fadeIn(200);
             } else {
                 $('.icon-up-circled2').fadeOut(200);
