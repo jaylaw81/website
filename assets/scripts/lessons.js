@@ -80,7 +80,7 @@ var lessons = {
         });
 
         $('.icon-reply').on('click', function(e){
-            window.location = "/rhinocoders/the-series/";
+            window.location = '/rhinocoders/the-series/' + parentTrack + '/';
         });
     },
 
