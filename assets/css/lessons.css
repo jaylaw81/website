@@ -72,7 +72,12 @@ section#navigation li {
   clear: both;
   width: 100%;
   cursor: pointer;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: all .2s linear;
 }
+
+
 
 section#navigation li:hover {
   background-color: #111316;
@@ -80,6 +85,12 @@ section#navigation li:hover {
 
 section#navigation li.active {
   background-color: #111316;
+}
+
+section#navigation li.active span.icon-circle {
+  transform: rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
+  transform-origin: 34% 34%;
+
 }
 
 section#navigation li a {
@@ -114,8 +125,15 @@ section#navigation li span.icon-circle.blank {
 }
 
 section#navigation li span.icon-circle {
-  color: #e86343;
+  color: #eee;
+  transform-style: preserve-3d;
+  transition: all .2s linear;
+  perspective: 1000;
 }
+
+
+
+
 
 article#content {
   position: relative;
