@@ -40,7 +40,7 @@ var lessons = {
                 if(lessons.isScrolling == false){
                     var topPos = $(this).offset().top - $(window).scrollTop();
                     var elemSel = ''
-                        if(topPos <= 20){
+                        if(topPos <= 50){
 
                             elemSel = $(this).attr('id');
                             $('span[class="fontawesome-circle"]').attr('class', 'fontawesome-circle blank');
@@ -72,7 +72,7 @@ var lessons = {
             $('span', this).attr('class', 'fontawesome-circle');
             var anchor = $('a', this).attr("href");
 
-            $("html, body").animate({ scrollTop: $(anchor).offset().top }, "slow", function(){
+            $("html, body").animate({ scrollTop: $(anchor).offset().top - 50 }, "slow", function(){
                 lessons.isScrolling = false;
             });
 
