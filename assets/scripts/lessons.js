@@ -25,34 +25,42 @@ var lessons = {
 
     },
 
+    handleScroll: function(){
+        var height = $(window).scrollTop();
+        $window = $(window);
+
+        if(height > 200) {
+            $('.icon-up-circled2').fadeIn(200);
+        } else {
+            $('.icon-up-circled2').fadeOut(200);
+        }
+
+        $('.section').each(function(){
+            if(lessons.isScrolling == false){
+                var topPos = $(this).offset().top - $(window).scrollTop();
+                var elemSel = ''
+                if(topPos <= 50){
+                    elemSel = $(this).attr('id');
+                    $('#navigation li').removeClass('active');
+                    $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
+                    $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
+                    $('a[href="#'+elemSel+'"]').parent().addClass('active');
+                }
+            }
+        });
+    },
+
     events: function(){
 
-        $(window).scroll(function() {
-            var height = $(window).scrollTop();
-            $window = $(window);
-
-            if(height > 200) {
-                $('.icon-up-circled2').fadeIn(200);
-            } else {
-                $('.icon-up-circled2').fadeOut(200);
+        var scrollTimer = null;
+        $(window).scroll(function () {
+            if (scrollTimer) {
+                clearTimeout(scrollTimer);   // clear any previous pending timer
             }
-
-            $('.section').each(function(){
-                if(lessons.isScrolling == false){
-                    var topPos = $(this).offset().top - $(window).scrollTop();
-                    var elemSel = ''
-                        if(topPos <= 50){
-                            elemSel = $(this).attr('id');
-                            $('#navigation li').removeClass('active');
-                            $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
-                            $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
-                            $('a[href="#'+elemSel+'"]').parent().addClass('active');
-                        }
-                }
-            });
-
-
+            scrollTimer = setTimeout(lessons.handleScroll, 100);   // set new timer
         });
+
+
 
         $('.icon-up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
