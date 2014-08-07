@@ -6,10 +6,6 @@
   width: 100%;
 }
 
-html {
-  font-family: Arial;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +20,13 @@ body {
 
 section {
   min-height: 800px;
+}
+
+a.external_link {
+  padding: 2px 8px;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,.6);
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.6);
+  border-radius: 4px;
 }
 
 .gist-meta { display: none; }
