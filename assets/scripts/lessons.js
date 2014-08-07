@@ -6,6 +6,7 @@ var content = document.querySelector('#content')
 var lessons = {
     gistArray: [],
     isScrolling: false,
+    activeSection: '',
     init: function( ){
 
         var def = [];
@@ -41,16 +42,11 @@ var lessons = {
                     var topPos = $(this).offset().top - $(window).scrollTop();
                     var elemSel = ''
                         if(topPos <= 50){
-
                             elemSel = $(this).attr('id');
                             $('#navigation li').removeClass('active');
                             $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
                             $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
                             $('a[href="#'+elemSel+'"]').parent().addClass('active');
-                            if(elemSel != elemSel){
-                                return false;
-                            }
-
                         }
                 }
             });
@@ -77,6 +73,7 @@ var lessons = {
             var anchor = $('a', this).attr("href");
 
             $("html, body").animate({ scrollTop: $(anchor).offset().top - 50 }, "slow", function(){
+                lessons.activeSection = anchor;
                 lessons.isScrolling = false;
             });
 
