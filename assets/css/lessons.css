@@ -211,6 +211,8 @@ article#content h3 {
 article#content h5 {
   font-weight: 600;
   color: #21adde;
+  margin: 30px 0 10px 0;
+  font-size: 25px;
 }
 
 article#content h3:after {
