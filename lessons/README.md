@@ -11,6 +11,6 @@ The following currently exist
 
 ##Contents of directory should contain the following.##
 
-index.html - base lesson file
-sections.json - navigation file
-/sections/ - ssi include files to be used in index.html file.
+- index.html - base lesson file
+- sections.json - navigation file
+- /sections/ - ssi include files to be used in index.html file.
