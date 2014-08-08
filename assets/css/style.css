@@ -2829,7 +2829,7 @@ hr {
   border-bottom: 6px solid #2facda;
 }
 .pi-section-overlay-base {
-  background: rgba(226, 82, 51, 0.9);
+  background: rgba(33, 173, 222, 0.9);
 }
 
 /*ony for one corner, use this variable several time for other corners*/
