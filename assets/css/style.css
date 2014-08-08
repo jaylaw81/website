@@ -2903,6 +2903,11 @@ hr {
 .pi-header-block-logo {
   margin-top: 6px;
 }
+
+.pi-header-row-fixed .pi-header-block-logo {
+  margin-top: 0px;
+}
+
 .pi-header-block-logo a {
   display: inline-block;
   vertical-align: middle;
