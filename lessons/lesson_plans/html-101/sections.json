@@ -1,44 +1,28 @@
 {
     "navItems" : [
         {
-            "labelName" : "Intro",
+            "labelName" : "Introduction",
             "section" : "intro-html"
         },
         {
-            "labelName" : "History of HTML",
-            "section" : "intro-html-history"
-        },
-        {
-            "labelName" : "Why we use HTML",
-            "section" : "intro-html-why"
-        },
-        {
-            "labelName" : "Web Browsers",
-            "section" : "intro-html-browsers"
-        },
-        {
-            "labelName" : "The DOCTYPE",
-            "section" : "intro-doctype"
-        },
-        {
-            "labelName" : "Basic Structure",
+            "labelName" : "HTML Structure",
             "section" : "intro-structure"
         },
         {
-            "labelName" : "HTML Tags",
+            "labelName" : "HTML5 Tags",
             "section" : "intro-tags"
         },
         {
-            "labelName" : "HTML Attributes",
-            "section" : "intro-attributes"
-        },
-        {
-            "labelName" : "HTML Headings",
-            "section" : "intro-headings"
+            "labelName" : "HTML Forms",
+            "section" : "intro-forms"
         },
         {
             "labelName" : "HTML5",
             "section" : "intro-html5"
+        },
+        {
+            "labelName" : "Testing &amp; Validation",
+            "section" : "intro-testing"
         }
     ]
 }
