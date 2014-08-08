@@ -2904,7 +2904,7 @@ hr {
   margin-top: 6px;
 }
 
-.pi-header-row-fixed .pi-header-block-logo {
+.pi-fixed-header-rows-shown .pi-row-duplication .pi-header-block-logo {
   margin-top: 0px;
 }
 
