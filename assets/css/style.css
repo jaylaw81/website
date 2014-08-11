@@ -6425,9 +6425,9 @@ li .pi-bullet-icon-img {
   background: #1984aa;
   border: 1px solid #1984aa;
   color: #fff !important;
-  -webkit-box-shadow: inset 0 1px 0 #d8533b;
-  -moz-box-shadow: inset 0 1px 0 #d8533b;
-  box-shadow: inset 0 1px 0 #d8533b;
+  -webkit-box-shadow: inset 0 1px 0 #1984aa;
+  -moz-box-shadow: inset 0 1px 0 #1984aa;
+  box-shadow: inset 0 1px 0 #1984aa;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .pi-btn-base.pi-btn-no-border {
