@@ -86,9 +86,9 @@
 	</style>
 	<![endif]-->
 </head>
-<body>
+<body style="background-color: #e1e1e1;">
 <br /><br />
-	<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" style="background-color: #CED9DD; box-shadow: 0 0 2px 2px #e1e1e1;">
+	<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" style="background-color: #ffffff; box-shadow: 0 0 2px 2px #fefefe;">
 		<tr>
 			<td valign="top" id="header" style="background-color: #21adde;">
 				<img src="http://detroit.sapient.com/rhinocoders/assets/img/rhinocoders-logo.jpg" width="299" height="88">
