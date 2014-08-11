@@ -6431,15 +6431,15 @@ li .pi-bullet-icon-img {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .pi-btn-base.pi-btn-no-border {
-  border-color: #2facda;
-  border-top-color: #ed7e60;
+  border-color: #1984aa;
+  border-top-color: #1984aa;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 .pi-btn-base.pi-btn-no-border:hover {
-  border-color: #d34a35;
-  border-top-color: #db634e;
+  border-color: #1984aa;
+  border-top-color: #1984aa;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
