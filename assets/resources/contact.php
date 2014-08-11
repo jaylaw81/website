@@ -10,4 +10,5 @@ $info = array(
 	'name' => $name,
 	'email' => $email,
 	'message' => $message);
-send_contact($info); ?>
+send_contact($info);
+?>
