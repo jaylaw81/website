@@ -1,13 +1,20 @@
 @import url(hover.css);
 
+@media print {
+  .icon-up-circled2,
+  #header,
+  .pi-section-header,
+  #navigation {
+    display: none;
+  }
+
+  article#content section {page-break-after: always;}
+}
+
 .pi-section-header-lg-w {display: none}
 .pi-section-header-sm-w {
   position: fixed !important;
   width: 100%;
-}
-
-html {
-  font-family: Arial;
 }
 
 body {
@@ -24,6 +31,13 @@ body {
 
 section {
   min-height: 800px;
+}
+
+a.external_link {
+  padding: 2px 8px;
+  -webkit-box-shadow: 1px 1px 10px 0 rgba(0,0,0,.6);
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.6);
+  border-radius: 4px;
 }
 
 .gist-meta { display: none; }
@@ -49,6 +63,7 @@ section#navigation {
   color: white;
   left: 0;
   height: 100%;
+  overflow: auto;
 }
 
 section#navigation ul {
@@ -177,8 +192,12 @@ article#content section {
   margin-bottom: 100px;
 }
 
+article#content section:last-of-type {
+  margin-top: 100px;
+}
+
 article#content h3 {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   overflow: hidden;
   letter-spacing: 1px;
@@ -187,6 +206,13 @@ article#content h3 {
   display: inline-block;
   width: 100%;
   font-weight: 600;
+}
+
+article#content h5 {
+  font-weight: 600;
+  color: #21adde;
+  margin: 30px 0 10px 0;
+  font-size: 25px;
 }
 
 article#content h3:after {
@@ -203,6 +229,7 @@ article#content h3:after {
 article#content dt {
   font-weight: bold;
   font-size: 18px;
+  color: #21adde;
 }
 
 article#content dd {
