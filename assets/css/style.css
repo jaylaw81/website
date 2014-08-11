@@ -4995,15 +4995,15 @@ pre code {
   color: #a53a2f;
 }
 ::selection {
-  background: #d34a35;
+  background: #21adde;
   color: #fff;
 }
 ::-moz-selection {
-  background: #d34a35;
+  background: #21adde;
   color: #fff;
 }
 ::-webkit-selection {
-  background: #d34a35;
+  background: #21adde;
   color: #fff;
 }
 
