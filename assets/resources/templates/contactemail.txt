@@ -1,0 +1,5 @@
+{NAME} has contacted Blight Authority with the following message:
+
+"{MESSAGE}".
+
+{NAME} - {EMAIL}
