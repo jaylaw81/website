@@ -6414,7 +6414,7 @@ li .pi-bullet-icon-img {
 }
 .pi-btn-base {
   background: #2facda;
-  border: 1px solid #2694bc;
+  border: 1px solid #1984aa;
   color: #fff !important;
   -webkit-box-shadow: inset 0 1px 0 #eb6f4b;
   -moz-box-shadow: inset 0 1px 0 #eb6f4b;
@@ -6422,8 +6422,8 @@ li .pi-bullet-icon-img {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 .pi-btn-base:hover {
-  background: #d34a35;
-  border: 1px solid #c63d2c;
+  background: #1984aa;
+  border: 1px solid #1984aa;
   color: #fff !important;
   -webkit-box-shadow: inset 0 1px 0 #d8533b;
   -moz-box-shadow: inset 0 1px 0 #d8533b;
