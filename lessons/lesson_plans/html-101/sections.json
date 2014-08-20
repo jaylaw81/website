@@ -23,6 +23,10 @@
         {
             "labelName" : "Testing &amp; Validation",
             "section" : "intro-testing"
+        },
+        {
+            "labelName" : "Study Materials",
+            "section" : "intro-study"
         }
     ]
 }
