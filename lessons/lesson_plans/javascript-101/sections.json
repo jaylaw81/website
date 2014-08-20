@@ -2,7 +2,11 @@
     "navItems" : [
         {
             "labelName" : "Intro",
-            "section" : "intro-html"
+            "section" : "intro-js"
+        },
+        {
+            "labelName" : "Study Materials",
+            "section" : "intro-study"
         }
     ]
 }
