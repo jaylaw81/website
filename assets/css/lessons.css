@@ -181,10 +181,10 @@ section#navigation li span.icon-circle {
 
 article#content {
   position: relative;
-  width: 700px;
+  width: 75%;
   left: 320px;
   background: white;
-  padding: 58px 43px 400px 43px;
+  padding: 58px 43px 40px 43px;
   height: 100%;
 }
 
