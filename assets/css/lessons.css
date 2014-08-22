@@ -11,6 +11,14 @@
   article#content section {page-break-after: always;}
 }
 
+.sub-logo {
+  display: block !important;
+  position: absolute;
+  left: -127px;
+  top: 12px;
+  height: 50%;
+}
+
 .pi-section-header-lg-w {display: none}
 .pi-section-header-sm-w {
   position: fixed !important;
