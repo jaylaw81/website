@@ -108,19 +108,7 @@ section#navigation li.active {
 }
 
 section#navigation li.active span.icon-circle {
-  /*transform*/
--webkit-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
-   -moz-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
-    -ms-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
-     -o-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
-        transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
-/*transform-origin*/
--webkit-transform-origin: 34%;
-   -moz-transform-origin: 34%;
-    -ms-transform-origin: 34%;
-     -o-transform-origin: 34%;
-        transform-origin: 34%;
-
+  color: white;
 }
 
 section#navigation li a {
