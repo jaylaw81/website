@@ -29,7 +29,7 @@ body {
   padding-top: 10px;
 }
 
-section {
+article#content section {
   min-height: 800px;
 }
 
@@ -46,24 +46,25 @@ section#header {
   position: fixed;
   top: 48px;
   left: 0;
-  background-color: rgb(88, 88, 88);
-  color: white;
-  width: 290px;
-  height: 100%;
-  padding: 11px 0 0 5px;
+  background-color: rgba(255,255,255,.8);
+  color: #333;
+  width: 320px;
+  height: 44px;
+  padding: 11px 0 0 20px;
   font-weight: 600;
   font-size: 21px;
 }
 
 section#navigation {
   position: fixed;
-  width: 290px;
-  top: 92px;
+  width: 317px;
+  top: 93px;
   background-color: #21252b;
   color: white;
   left: 0;
   height: 100%;
   overflow: auto;
+  border-left: 10px solid rgba(255,255,255,.1);
 }
 
 section#navigation ul {
@@ -108,23 +109,23 @@ section#navigation li.active {
 
 section#navigation li.active span.icon-circle {
   /*transform*/
--webkit-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-   -moz-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-    -ms-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-     -o-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-        transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
+-webkit-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
+   -moz-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
+    -ms-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
+     -o-transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
+        transform:rotateY(180deg) scale(1) translateX(0px) translateY(0px);
 /*transform-origin*/
--webkit-transform-origin:34% 34%;
-   -moz-transform-origin:34% 34%;
-    -ms-transform-origin:34% 34%;
-     -o-transform-origin:34% 34%;
-        transform-origin:34% 34%;
+-webkit-transform-origin: 34%;
+   -moz-transform-origin: 34%;
+    -ms-transform-origin: 34%;
+     -o-transform-origin: 34%;
+        transform-origin: 34%;
 
 }
 
 section#navigation li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   top: 0px;
   left: 10px;
@@ -252,10 +253,8 @@ article#content dd {
 }
 
 article#content img {
-  max-width: 700px;
-  min-width: 700px;
+  min-width: 100%;
   position: relative;
-  margin-left: -43px;
 }
 
 article#content span.icon-book {
