@@ -97,14 +97,174 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body {
+    background-color: #efefef;
+    padding: 20px 0 0 0;
+}
+.button {
+    background-color: #1b89af;
+    border-bottom: 2px solid #105b74;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    color: #fff;
+    -webkit-transition: all, 0.2s, ease-in-out;
+    -moz-transition: all, 0.2s, ease-in-out;
+    -o-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
+}
+.button:hover {
+    background-color: #105b74;
+    border-bottom: 2px solid #105b74;
+}
 
+.main-header,
+.section-container,
+.main-footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+.section-container {
+    /*clear: both;*/
+}
 
+.main-header {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #22acdb;
+}
 
+.main-header .nav {
+    display: inline-block;
+    float: right;
+}
 
+.main-header .logo {
+    width: 75%;
+    max-width: 120px;
+}
 
+.main-header .nav .nav-links {
+    margin: 40px 0 0 0;
+    padding: 0;
+}
 
+.main-header .nav .nav-links .link {
+    display: inline;
+    margin-left: 10px;
+}
 
+.main-header .nav .nav-links .link a {
+    color: #fff;
+    padding: 10px;
+    -webkit-transition: all, 0.2s, ease-in-out;
+    -moz-transition: all, 0.2s, ease-in-out;
+    -o-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
+    text-decoration: none;
+}
+.main-header .nav .nav-links .link a:hover {
+    color: #999;
+    background-color: #333;
+}
 
+.main-body {
+    width: 65%;
+    float: left;
+}
+
+.sidebar {
+    width: 25%;
+    float: right;
+    background-color: #9ad7ec;
+    padding: 20px;
+}
+
+.sidebar .form {
+
+}
+
+.sidebar .form label {
+    font-size: 13px;
+}
+
+.sidebar .form input {
+    border: none;
+    display: block;
+    margin: 0 0 7px;
+    padding: 7px;
+    width: 95%;
+    color: #666;
+}
+
+.sidebar .form .button {
+    padding: 7px 10px;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+
+.sidebar .rhino-types {
+    margin: 50px 0;
+    padding: 0;
+}
+
+.sidebar .rhino-types .type {
+    list-style: none;
+    margin: 0 0 15px 0;
+}
+
+.sidebar .rhino-types .type .type-img {
+    float: left;
+    width: 30%;
+}
+
+.sidebar .rhino-types .type .type-detail {
+    float: right;
+    width: 65%;
+    font-size: 13px;
+    margin: 0;
+}
+
+.photo-gallery {
+    margin: 0;
+    padding: 0;
+
+}
+.photo-gallery li {
+    list-style: none;
+    width: 25%;
+    position: relative;
+    float: left;
+    max-height: 165px;
+    overflow: hidden;
+}
+
+.photo-gallery li .photo {
+    width: 100%;
+    height: auto;
+    max-height: 165px;
+}
+
+.main-footer {
+    background-color: #105b74;
+    padding: 20px;
+}
+
+.main-footer .copyright,
+.main-footer .terms {
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+.main-footer .terms {
+    font-style: italic;
+    font-weight: normal;
+}
 
 
 
