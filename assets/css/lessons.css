@@ -11,6 +11,46 @@
   article#content section {page-break-after: always;}
 }
 
+@media only screen
+and (min-width : 320px)
+and (max-width : 640px) {
+
+  .sub-logo {
+    display: block !important;
+    position: absolute !important;
+    left: 15px !important;
+    top: 11px !important;
+    width: 100% !important;
+    height: 50% !important;
+    z-index: 99999 !important;
+  }
+
+  .icon-reply,
+  .pi-header-block,
+  section#navigation {
+    display: none !important;
+  }
+
+  article#content {
+    width: 100% !important;
+    padding: 20px;
+    left: 0px !important;
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
+}
+
+.sub-logo {
+  display: block !important;
+  position: absolute;
+  left: -127px;
+  top: 12px;
+  height: 50%;
+}
+
 .pi-section-header-lg-w {display: none}
 .pi-section-header-sm-w {
   position: fixed !important;
@@ -29,7 +69,7 @@ body {
   padding-top: 10px;
 }
 
-section {
+article#content section {
   min-height: 800px;
 }
 
@@ -46,24 +86,25 @@ section#header {
   position: fixed;
   top: 48px;
   left: 0;
-  background-color: rgb(88, 88, 88);
-  color: white;
-  width: 290px;
-  height: 100%;
-  padding: 11px 0 0 5px;
+  background-color: rgba(255,255,255,.8);
+  color: #333;
+  width: 320px;
+  height: 44px;
+  padding: 11px 0 0 20px;
   font-weight: 600;
   font-size: 21px;
 }
 
 section#navigation {
   position: fixed;
-  width: 290px;
-  top: 92px;
+  width: 317px;
+  top: 93px;
   background-color: #21252b;
   color: white;
   left: 0;
   height: 100%;
   overflow: auto;
+  border-left: 10px solid rgba(255,255,255,.1);
 }
 
 section#navigation ul {
@@ -107,24 +148,12 @@ section#navigation li.active {
 }
 
 section#navigation li.active span.icon-circle {
-  /*transform*/
--webkit-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-   -moz-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-    -ms-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-     -o-transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-        transform:rotateY(180deg) scale(6) translateX(-50px) translateY(-3px);
-/*transform-origin*/
--webkit-transform-origin:34% 34%;
-   -moz-transform-origin:34% 34%;
-    -ms-transform-origin:34% 34%;
-     -o-transform-origin:34% 34%;
-        transform-origin:34% 34%;
-
+  color: white;
 }
 
 section#navigation li a {
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   top: 0px;
   left: 10px;
@@ -252,10 +281,8 @@ article#content dd {
 }
 
 article#content img {
-  max-width: 700px;
-  min-width: 700px;
+  min-width: 100%;
   position: relative;
-  margin-left: -43px;
 }
 
 article#content span.icon-book {

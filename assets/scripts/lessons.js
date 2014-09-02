@@ -22,7 +22,6 @@ var lessons = {
         });
 
         lessons.events();
-
     },
 
     handleScroll: function(){
