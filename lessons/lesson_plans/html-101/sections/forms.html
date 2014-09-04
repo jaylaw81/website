@@ -9,13 +9,38 @@
         <dt>
             <code>&lt;form&gt;</code>
         </dt>
-        <dd>The<code>form</code>defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
+        <dd>The<code>form</code>element defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
         <br><br>
-        The method attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+        The  <code>method </code> attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+
+        <code>get</code> is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.
         <p class='gist-code' data-gist="rhinocoders/dd744aedf8678f5087be"></p>
         </dd>
+
+
         <dt>
+            <code>&lt;input&gt;</code>
         </dt>
+        <dd>The<code>input</code>tag is the daddy of the form world. It can take a multitude of use cases, the most common of which are outlined below.
+
+        <code><input type="text"></code> or simply <code><input></code> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
+        <code><input type="password"></code> is similar to the textbox, but the characters typed in by the user will be hidden.
+        <code><input type="checkbox"></code> is a checkbox, which can be toggled on and off by the user. This can also have a checked attribute (<code><input type="checkbox" checked> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
+        <code><input type="radio"></code> is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
+        <code><input type="submit"></code> is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <code><input type="submit" value="Ooo. Look. Text on a button. Wow"></code>.
+
+        </dd>
+
+        <dt>
+            <code>&lt;form&gt;</code>
+        </dt>
+        <dd>The<code>form</code>element defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
+        <br><br>
+        The  <code>method </code> attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+
+        <code>get</code> is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.
+        <p class='gist-code' data-gist="rhinocoders/dd744aedf8678f5087be"></p>
+        </dd>
     </dl>
 
 </section>
