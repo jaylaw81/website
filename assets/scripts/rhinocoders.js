@@ -4,7 +4,7 @@ var rc = {
         this.loadTweets();
     },
     loadTweets: function(){
-        var url = '/rhinocoders/includes/twitter_feed.php';
+        var url = '/includes/twitter_feed.php';
 
         $.getJSON(url, function(data){
             var html = '';

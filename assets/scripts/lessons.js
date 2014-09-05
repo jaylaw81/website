@@ -12,7 +12,7 @@ var lessons = {
         var def = [];
         var res = [];
 
-        def.push($.get('/rhinocoders/lessons/lesson_plans/' + lessonPlan + '/index.html', function(data) {
+        def.push($.get('/lessons/lesson_plans/' + lessonPlan + '/index.html', function(data) {
             $('#content').html(data);
         }));
 
@@ -87,13 +87,13 @@ var lessons = {
         });
 
         $('.icon-reply').on('click', function(e){
-            window.location = '/rhinocoders/the-series/' + parentTrack + '/';
+            window.location = '/the-series/' + parentTrack + '/';
         });
     },
 
     getNav: function(lessonPlan){
 
-        $.getJSON('/rhinocoders/lessons/lesson_plans/' + lessonPlan + '/sections.json', function(json){
+        $.getJSON('/lessons/lesson_plans/' + lessonPlan + '/sections.json', function(json){
 
             for(item in json.navItems){
                 var navLabel = json.navItems[item].labelName;
