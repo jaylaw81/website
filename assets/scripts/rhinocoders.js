@@ -56,27 +56,31 @@ $(document).ready(function(){
         var email = $(".pi-contact-form .email").val();
         var mess = $(".pi-contact-form .mess").val();
 
-        if(name == "" || email == "" || mess == "") {
+        console.log(name);
+        console.log(email);
+        console.log(mess);
 
-            $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
+        // if(name == "" || email == "" || mess == "") {
 
-        } else {
-            $.post(
+        //     $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
 
-                "../assets/resources/contact.php", {
-                    name: name,
-                    email: email,
-                    mess: mess
-                },
+        // } else {
+        //     $.post(
 
-                function(response) {
+        //         "../assets/resources/contact.php", {
+        //             name: name,
+        //             email: email,
+        //             mess: mess
+        //         },
 
-                    $(".pi-contact-form .success-message").slideDown(700).delay(2000).slideUp(300);
+        //         function(response) {
 
-                }
-            )
-            return false;
-        }
+        //             $(".pi-contact-form .success-message").slideDown(700).delay(2000).slideUp(300);
+
+        //         }
+        //     )
+        //     return false;
+        // }
     })
 });
 
