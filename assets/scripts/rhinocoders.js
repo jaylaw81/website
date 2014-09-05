@@ -54,9 +54,9 @@ $(document).ready(function(){
     $("#send-contact").on("click", function(){
         var name = $(".pi-contact-form .name").val();
         var email = $(".pi-contact-form .email").val();
-        var message = $(".pi-contact-form .mess").val();
+        var mess = $(".pi-contact-form .mess").val();
 
-        if(name == "" || email == "" || message == "") {
+        if(name == "" || email == "" || mess == "") {
 
             $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
 
@@ -66,7 +66,7 @@ $(document).ready(function(){
                 "../assets/resources/contact.php", {
                     name: name,
                     email: email,
-                    message: message
+                    mess: mess
                 },
 
                 function(response) {
