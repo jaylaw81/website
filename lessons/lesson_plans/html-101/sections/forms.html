@@ -23,23 +23,45 @@
         </dt>
         <dd>The<code>input</code>tag is the daddy of the form world. It can take a multitude of use cases, the most common of which are outlined below.
 
-        <code><input type="text"></code> or simply <code><input></code> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
-        <code><input type="password"></code> is similar to the textbox, but the characters typed in by the user will be hidden.
-        <code><input type="checkbox"></code> is a checkbox, which can be toggled on and off by the user. This can also have a checked attribute (<code><input type="checkbox" checked> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
-        <code><input type="radio"></code> is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
-        <code><input type="submit"></code> is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <code><input type="submit" value="Ooo. Look. Text on a button. Wow"></code>.
+        <code><input type="text"></code> or simply <input> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
+        <input type="password"> is similar to the textbox, but the characters typed in by the user will be hidden.
+        <input type="checkbox"> is a checkbox, which can be toggled on and off by the user. This can also have a checked attribute <input type="checkbox" checked> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
+        <input type="radio"> is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
+        <input type="submit"> is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <input type="submit" value="Ooo. Look. Text on a button. Wow">.
 
         </dd>
 
         <dt>
-            <code>&lt;form&gt;</code>
+            <code>&lt;textarea&gt;</code>
         </dt>
-        <dd>The<code>form</code>element defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
+        <dd>The<code>textarea</code> is, basically, a large, multi-line textbox. The anticipated number of rows and columns can be defined with rows and cols attributes, although you can manipulate the size to your heart’s content using CSS.
         <br><br>
-        The  <code>method </code> attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
+        <p class='gist-code' data-gist="rhinocoders/8495ff61e3b95ffb9650"></p>
+        Any text you choose to place between the opening and closing tags (in this case “a big load of text”) will form the initial value of the text area.
+        </dd>
 
-        <code>get</code> is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.
-        <p class='gist-code' data-gist="rhinocoders/dd744aedf8678f5087be"></p>
+        <dt>
+            <code>&lt;select&gt;</code>
+        </dt>
+        <dd>The<code>select</code> tag works with the <code>option</code> tag to make drop-down select boxes.
+        <br><br>
+        <p class='gist-code' data-gist="rhinocoders/72b8e27dbc71e0f83ff1"></p>
+
+        When the form is submitted, the value of the selected option will be sent. This value will be the text between the selected opening and closing option tag unless an explicit value is specified with the value attribute, in which case this will be sent instead. 
+         <br><br>
+        So, in the above example, if the first item is selected, “Option 1” will be sent, if the third item is selected, “third option” will be sent.
+         <br><br>
+        Similar to the checked attribute of checkboxes and radio buttons, an option tag can also have a selected attribute, to start off with one of the items already being selected, eg.<option selected>Rodent</option> would pre-select “Rodent” from the items.
+        </dd>
+
+        <dt>
+            <code>&lt;names&gt;</code>
+        </dt>
+        <dd>All of the tags mentioned above will look very nice presented on the page but if you hook up your form to a form-handling script, they will all be ignored. This is because the form fields need names. So to all of the fields, the attribute <code>name</code> needs to be added, for example <input type="text" name="talkingsponge">.
+        <br><br>
+        A form might look like the one below. (Note: this form will not work unless there is a “contactus.php” file, which is stated in the action attribute of the form tag, to handle the submitted date)
+        <br><br>
+        <p class='gist-code' data-gist="rhinocoders/8caf3f5bd479de20b509"></p>
         </dd>
     </dl>
 
