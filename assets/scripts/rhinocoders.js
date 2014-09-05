@@ -61,7 +61,6 @@ $(document).ready(function(){
             $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
 
         } else {
-
             $.post(
 
                 "../assets/resources/contact.php", {
