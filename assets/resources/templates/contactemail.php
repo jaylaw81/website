@@ -91,7 +91,7 @@
 	<table cellpadding="0" cellspacing="0" border="0" align="center" width="600" style="background-color: #ffffff; box-shadow: 0 0 2px 2px #fefefe;">
 		<tr>
 			<td valign="top" id="header" style="background-color: #21adde;">
-				<img src="/assets/img/rhinocoders-logo.jpg" width="299" height="88">
+				<img src="http://www.rhinocoders.com/assets/img/rhinocoders-logo.jpg" width="299" height="88">
 			</td>
 		</tr>
 		<tr>
@@ -100,7 +100,7 @@
 					<tr><td width="20"></td></tr>
 					<tr>
 						<td></td>
-						<td><br /><br /><p style="color: #535353; font-family: 'Arial', sans-serif;"><strong>NAME</strong> has contacted RhinoCoders with the following message:<br /><br />"MESSAGE"<br /><br />Reply to NAME with: <i><a href="mailto:EMAIL">EMAIL</a></i></p></td>
+						<td><br /><br /><p style="color: #535353; font-family: 'Arial', sans-serif;"><strong>{NAME}</strong> has contacted RhinoCoders with the following message:<br /><br />"{MESSAGE}"<br /><br />Reply to {NAME} with: <i><a href="mailto:{EMAIL}">{EMAIL}</a></i></p></td>
 						<td></td>
 					</tr>
 					<tr><td width="20"></td></tr>
