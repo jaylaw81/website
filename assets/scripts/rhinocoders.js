@@ -64,7 +64,7 @@ $(document).ready(function(){
 
             $.post(
 
-                "assets/resources/contact.php", {
+                "../assets/resources/contact.php", {
                     name: name,
                     email: email,
                     message: message
