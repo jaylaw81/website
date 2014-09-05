@@ -13,9 +13,9 @@ function format_contact($info, $format){
 	$template = file_get_contents( $_SERVER['DOCUMENT_ROOT']. '/assets/resources/templates/contactemail.'.$format);
 
 	//replace all the tags
-	$template = preg_replace('/{NAME}/m', $info['name'], $template);
-	$template = preg_replace('/{EMAIL}/m', $info['email'], $template);
-	$template = preg_replace('/{MESSAGE}/m', $info['message'], $template);
+	$template = preg_replace('{NAME}', $info['name'], $template);
+	$template = preg_replace('{EMAIL}', $info['email'], $template);
+	$template = preg_replace('{MESSAGE}', $info['message'], $template);
 
 	//return the html of the template
 	return $template;
