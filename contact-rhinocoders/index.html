@@ -31,28 +31,30 @@
                                 </h2>
 
                                 <!-- Contact form -->
-                                <form role="form" action="../assets/resources/contact.php" method="post" class="pi-contact-form">
+                                <form role="form" class="pi-contact-form">
+                                    <p class="error-message" style="display: none; padding: 5px; background-color: #ce2a60; border: 1px solid #5a0e27; color: #5a0e27;">There was an error with your message. Please retry.</p>
+                                    <p class="success-message" style="display: none; padding: 5px; background-color: #8ace32; border: 1px solid #395a0e; color: #395a0e;">Thank you for your message.</p>
                                     <div class="pi-error-container"></div>
                                     <div class="pi-row pi-grid-small-margins">
                                         <div class="pi-col-sm-6">
                                             <div class="form-group pi-padding-bottom-10">
                                                 <label for="exampleInputName1">Name *</label>
-                                                <input type="text" class="form-control form-control-name" id="exampleInputName1"
+                                                <input type="text" class="form-control form-control-name" id="name" name="name"
                                                        placeholder="e.g. Adam Smith">
                                             </div>
                                             <div class="form-group pi-padding-bottom-10">
                                                 <label for="exampleInputEmail1">Email address *</label>
-                                                <input type="email" class="form-control form-control-email" id="exampleInputEmail1"
+                                                <input type="email" class="form-control form-control-email" id="email" name="email"
                                                        placeholder="e.g. mail@example.com">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group pi-padding-bottom-10">
                                         <label for="exampleInputMessage1">Message *</label>
-                                        <textarea class="form-control form-control-comments" id="exampleInputMessage1" placeholder="How can we help?" rows="3"></textarea>
+                                        <textarea class="form-control form-control-comments" id="message" name="message" placeholder="How can we help?" rows="3"></textarea>
                                     </div>
                                     <p>
-                                        <button class="btn pi-btn-base">
+                                        <button id="send-contact" class="btn pi-btn-base">
                                             Send Message<i class="icon-paper-plane pi-icon-right"></i>
                                         </button>
                                     </p>

@@ -50,6 +50,35 @@ var rc = {
 
 $(document).ready(function(){
     rc.init();
+
+    $("#send-contact").on("click", function(){
+        var name = $(".pi-contact-form .name").val();
+        var email = $(".pi-contact-form .email").val();
+        var message = $(".pi-contact-form .message").val();
+
+        if(name == "" || email == "" || message == "") {
+
+            $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
+
+        } else {
+
+            $.post(
+
+                "assets/resources/contact.php", {
+                    name: name,
+                    email: email,
+                    message: message
+                },
+
+                function(response) {
+
+                    $(".pi-contact-form .success-message").slideDown(700).delay(2000).slideUp(300);
+
+                }
+            )
+            return false;
+        }
+    })
 });
 
 /*
