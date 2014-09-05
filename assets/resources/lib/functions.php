@@ -10,13 +10,13 @@ function format_contact($info, $format){
 	$root = $_SERVER['DOCUMENT_ROOT'].'/';
 
 	//grab the template content
-	$template = file_get_contents('../resources/templates/contactemail.'.$format);
-			
+	$template = file_get_contents( $_SERVER['DOCUMENT_ROOT']. '/assets/resources/templates/contactemail.'.$format);
+
 	//replace all the tags
 	$template = preg_replace('{NAME}', $info['name'], $template);
 	$template = preg_replace('{EMAIL}', $info['email'], $template);
 	$template = preg_replace('{MESSAGE}', $info['message'], $template);
-		
+
 	//return the html of the template
 	return $template;
 }
@@ -27,7 +27,7 @@ function format_contact($info, $format){
 // Send CONTACT email function
 //***************************
 function send_contact($info){
-		
+
 	//format each email
 	$body = format_contact($info,'php');
 	$body_plain_txt = format_contact($info,'txt');
@@ -57,7 +57,7 @@ function show_errors($action){
 			//loop out each error
 			foreach($action['text'] as $text){
 				$error .= "<li><p>$text</p></li>"."\n";
-			}	
+			}
 		}else{
 			//single error
 			$error .= "<li><p>$action[text]</p></li>";
