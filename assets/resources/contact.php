@@ -1,4 +1,4 @@
-<?
+<?php
 require_once('../lib/functions.php');
 require_once('../lib/swift/swift_required.php');
 $name = mysql_real_escape_string($_POST['name']);
