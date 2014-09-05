@@ -3,11 +3,11 @@
     include($_SERVER['DOCUMENT_ROOT'] . '/assets/resources/lib/swift/swift_required.php');
     $name = mysql_real_escape_string($_POST['name']);
     $email = mysql_real_escape_string($_POST['email']);
-    $message = mysql_real_escape_string($_POST['message']);
+    $mess = mysql_real_escape_string($_POST['mess']);
     $info = array(
         'name' => $name,
         'email' => $email,
-        'message' => $message
+        'mess' => $mess
     );
     send_contact($info);
 ?>

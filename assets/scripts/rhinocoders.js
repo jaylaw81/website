@@ -54,7 +54,7 @@ $(document).ready(function(){
     $("#send-contact").on("click", function(){
         var name = $(".pi-contact-form .name").val();
         var email = $(".pi-contact-form .email").val();
-        var message = $(".pi-contact-form .message").val();
+        var message = $(".pi-contact-form .mess").val();
 
         if(name == "" || email == "" || message == "") {
 

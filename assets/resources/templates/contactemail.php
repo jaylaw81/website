@@ -100,7 +100,7 @@
 					<tr><td width="20"></td></tr>
 					<tr>
 						<td></td>
-						<td><br /><br /><p style="color: #535353; font-family: 'Arial', sans-serif;"><strong>{NAME}</strong> has contacted RhinoCoders with the following message:<br /><br />"{MESSAGE}"<br /><br />Reply to {NAME} with: <i><a href="mailto:{EMAIL}">{EMAIL}</a></i></p></td>
+						<td><br /><br /><p style="color: #535353; font-family: 'Arial', sans-serif;"><strong>{NAME}</strong> has contacted RhinoCoders with the following message:<br /><br />"{MESS}"<br /><br />Reply to {NAME} with: <i><a href="mailto:{EMAIL}">{EMAIL}</a></i></p></td>
 						<td></td>
 					</tr>
 					<tr><td width="20"></td></tr>
