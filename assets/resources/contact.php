@@ -1,5 +1,5 @@
 <?php
-    include($_SERVER['DOCUMENT_ROOT'] . '/assets/resources/lib/config.php');
+    include($_SERVER['DOCUMENT_ROOT'] . '/assets/resources/config.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/assets/resources/lib/functions.php');
     include($_SERVER['DOCUMENT_ROOT'] . '/assets/resources/lib/swift/swift_required.php');
 
