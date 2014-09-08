@@ -52,9 +52,9 @@ $(document).ready(function(){
     rc.init();
 
     $("#send-contact").on("click", function(){
-        var name = $(".pi-contact-form .name").val();
-        var email = $(".pi-contact-form .email").val();
-        var mess = $(".pi-contact-form .mess").val();
+        var name = $("#rc-contact-form .form-control-name").val();
+        var email = $("#rc-contact-form .form-control-email").val();
+        var mess = $("#rc-contact-form .form-control-message").val();
 
         console.log(name);
         console.log(email);
