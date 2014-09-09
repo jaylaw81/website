@@ -1,6 +1,6 @@
 <?php
 $host = "localhost";
-$dbname = "";
+$dbname = "test";
 $user = "root";
 $pass = "nitrobham2014mysql";
 $conn = mysql_connect($host, $user, $pass) or die("MYSQL ERROR");
