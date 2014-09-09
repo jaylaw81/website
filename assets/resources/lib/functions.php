@@ -38,7 +38,7 @@ function send_contact($info){
 	$message = Swift_Message::newInstance();
 	$message ->setSubject('New Contact Email!');
 	$message ->setFrom(array('noreply@rhinocoders.com' => 'RhinoCoders | New Contact'));
-	$message ->setTo(array('mtrueblood@sapient.com' => 'mtrueblood@sapient.com'));
+	$message ->setTo(array('rhinocoders@gmail.com' => 'rhinocoders@gmail.com'));
 	$message ->setBody($body_plain_txt);
 	$message ->addPart($body, 'text/html');
 	$result = $mailer->send($message);
