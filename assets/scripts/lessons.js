@@ -19,9 +19,17 @@ var lessons = {
         $.when.apply($, def).done(function() {
             lessons.embedGists();
             lessons.getNav(lessonPlan);
+            lessons.sections();
         });
 
         lessons.events();
+    },
+
+    sections: function(){
+
+        $('article#content section:not(:first)').hide();
+
+
     },
 
     handleScroll: function(){
@@ -51,6 +59,7 @@ var lessons = {
 
     events: function(){
 
+        /*
         var scrollTimer = null;
         $(window).scroll(function () {
             if (scrollTimer) {
@@ -58,14 +67,42 @@ var lessons = {
             }
             scrollTimer = setTimeout(lessons.handleScroll, 100);   // set new timer
         });
-
-
+*/
 
         $('.icon-up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
             return false;
         });
 
+        $(document).on('click', 'a.next-step', function(e){
+            e.preventDefault();
+            var nextNavSection = $('li.highlighted').next().data('section');
+            var nextContentSection = $('#content section.section-open').next();
+
+            $('li.highlighted').removeClass('highlighted').hide();
+            $('li[data-section="'+nextNavSection+'"]').addClass('highlighted').show();
+
+            $('#content section.section-open').removeClass('section-open').hide();
+            nextContentSection.addClass('section-open').show();
+
+            //console.log(nextSection);
+        });
+
+        $(document).on('click', 'a.prev-step', function(e){
+            e.preventDefault();
+            var prevNavSection = $('li.highlighted').prev().data('section');
+            var prevContentSection = $('#content section.section-open').prev();
+
+            $('li.highlighted').removeClass('highlighted').hide();
+            $('li[data-section="'+prevNavSection+'"]').addClass('highlighted').show();
+
+            $('#content section.section-open').removeClass('section-open').hide();
+            prevContentSection.addClass('section-open').show();
+
+            //console.log(nextSection);
+        });
+
+        /*
         $(document).on('click', '#navigation li', function(e){
             e.preventDefault();
             e.stopPropagation();
@@ -85,6 +122,7 @@ var lessons = {
             });
 
         });
+*/
 
         $('.icon-reply').on('click', function(e){
             window.location = '/the-series/' + parentTrack + '/';
@@ -98,9 +136,17 @@ var lessons = {
             for(item in json.navItems){
                 var navLabel = json.navItems[item].labelName;
                 var navSection = json.navItems[item].section;
-                var html = '<li class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a></li>';
+                var navDesc = json.navItems[item].description;
+                var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
+                html += '<a href="#" class="prev-step">Previous Step</a> <a href="#" class="next-step">Next Step</a></li>';
                 $('#navigation ul').append(html);
             }
+
+            $('section#navigation li:not(:first-of-type)').hide();
+            $('#content section:first-of-type').addClass('section-open');
+            $('section#navigation li:first-of-type').addClass('highlighted');
+            $('section#navigation li:first-of-type a.prev-step').hide();
+            $('section#navigation li:last-of-type a.next-step').hide();
 
         });
     },

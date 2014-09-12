@@ -107,6 +107,8 @@ section#navigation {
   border-left: 10px solid rgba(255,255,255,.1);
 }
 
+
+
 section#navigation ul {
   margin: 0;
   padding: 0;
@@ -139,6 +141,7 @@ section#navigation li {
 
 
 
+
 section#navigation li:hover {
   background-color: #111316;
 }
@@ -150,6 +153,13 @@ section#navigation li.active {
 section#navigation li.active span.icon-circle {
   color: white;
 }
+
+section#navigation li span.nav-desc {
+  padding: 10px;
+  font-size: 12px;
+}
+
+
 
 section#navigation li a {
   text-decoration: none;
@@ -169,6 +179,33 @@ section#navigation li a:hover {
   color: #e1e1e1;
 }
 
+section#navigation li a.prev-step {
+  background-color: black;
+  text-align: left;
+  float: left;
+  width: 50%;
+  display: block;
+  padding: 10px;
+  position: relative;
+  left: -10px;
+}
+
+section#navigation li a.next-step {
+  background-color: black;
+  color: white;
+  text-align: right;
+  display: block;
+  padding: 10px;
+  width: 50%;
+  position: relative;
+  left: -10px;
+  float: right;
+}
+
+section#navigation li a.prev-step:hover,
+section#navigation li a.next-step:hover {
+  background-color: #21adde;
+}
 
 
 section#navigation li span {

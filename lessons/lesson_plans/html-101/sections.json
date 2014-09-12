@@ -2,31 +2,38 @@
     "navItems" : [
         {
             "labelName" : "Introduction",
-            "section" : "intro-html"
+            "section" : "intro-html",
+            "description" : "Brief introduction into the history of HTML and why we use it."
         },
         {
             "labelName" : "HTML Structure",
-            "section" : "intro-structure"
+            "section" : "intro-structure",
+            "description" : "HTML is the skeleton of a web page. Learn how to create the basic structure."
         },
         {
             "labelName" : "HTML5 Tags",
-            "section" : "intro-tags"
+            "section" : "intro-tags",
+            "description" : "Tags give meaning to the content. They also give us functionality and style."
         },
         {
             "labelName" : "HTML Forms",
-            "section" : "intro-forms"
+            "section" : "intro-forms",
+            "description" : "Forms allow us to send information and communicate with a web site."
         },
         {
             "labelName" : "HTML5",
-            "section" : "intro-html5"
+            "section" : "intro-html5",
+            "description" : "HTML5 introduces us to new features, tags and fun!"
         },
         {
             "labelName" : "Testing &amp; Validation",
-            "section" : "intro-testing"
+            "section" : "intro-testing",
+            "description" : "Test, Test, Test! Make sure your web page works for everyone!"
         },
         {
             "labelName" : "Study Materials",
-            "section" : "intro-study"
+            "section" : "intro-study",
+            "description" : "Learn more on your own."
         }
     ]
 }
