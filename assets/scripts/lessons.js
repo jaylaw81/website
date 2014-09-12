@@ -143,10 +143,10 @@ var lessons = {
                 var navSource = json.navItems[item].source;
 
                 var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
-                html += '<a href="#" class="prev-step">Previous Step</a> <a href="#" class="next-step">Next Step</a>';
+                html += '<a href="#" class="prev-step"><i class="icon-left-open"></i> Previous Step</a> <a href="#" class="next-step">Next Step <i class="icon-right-open"></i></a>';
 
                 if(navSource != undefined){
-                    html += '<span class="source-code"><a href="#'+navSource+'">View Source Code</a></span></li>';
+                    html += '<span class="source-code"><a href="#'+navSource+'"><i class="icon-code"></i> View Source Code <i class="icon-code"></i></a></span></li>';
                 } else {
                     html += '</li>';
                 }
