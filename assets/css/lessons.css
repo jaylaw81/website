@@ -208,11 +208,32 @@ section#navigation li a.next-step:hover {
 }
 
 
+
+
 section#navigation li span {
   padding: 0 5px 0 0;
   font-size: 20px;
   float: left;
   display: block;
+}
+
+section#navigation li span.source-code {
+  font-size: 10px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  left: -13px;
+  margin-top: 10px;
+}
+
+section#navigation li span.source-code a {
+  background-color: #e06e52;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  float: left;
+  clear: both;
+  font-size: 10px;
 }
 
 section#navigation li span.icon-circle.blank {

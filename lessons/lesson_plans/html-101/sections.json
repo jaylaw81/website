@@ -8,7 +8,8 @@
         {
             "labelName" : "HTML Structure",
             "section" : "intro-structure",
-            "description" : "HTML is the skeleton of a web page. Learn how to create the basic structure."
+            "description" : "HTML is the skeleton of a web page. Learn how to create the basic structure.",
+            "source": "structure-source"
         },
         {
             "labelName" : "HTML5 Tags",

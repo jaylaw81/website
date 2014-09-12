@@ -102,6 +102,9 @@ var lessons = {
             //console.log(nextSection);
         });
 
+
+
+
         /*
         $(document).on('click', '#navigation li', function(e){
             e.preventDefault();
@@ -137,8 +140,17 @@ var lessons = {
                 var navLabel = json.navItems[item].labelName;
                 var navSection = json.navItems[item].section;
                 var navDesc = json.navItems[item].description;
+                var navSource = json.navItems[item].source;
+
                 var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
-                html += '<a href="#" class="prev-step">Previous Step</a> <a href="#" class="next-step">Next Step</a></li>';
+                html += '<a href="#" class="prev-step">Previous Step</a> <a href="#" class="next-step">Next Step</a>';
+
+                if(navSource != undefined){
+                    html += '<span class="source-code"><a href="#'+navSource+'">View Source Code</a></span></li>';
+                } else {
+                    html += '</li>';
+                }
+
                 $('#navigation ul').append(html);
             }
 
@@ -147,6 +159,17 @@ var lessons = {
             $('section#navigation li:first-of-type').addClass('highlighted');
             $('section#navigation li:first-of-type a.prev-step').hide();
             $('section#navigation li:last-of-type a.next-step').hide();
+
+            $('span.source-code a').on('mfpBeforeOpen', function(e){
+                e.preventDefault();
+                var dataSource = $(this).attr('href');
+                $(dataSource).show();
+            });
+
+            $('span.source-code a').magnificPopup({
+              type:'inline',
+              midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });
 
         });
     },
