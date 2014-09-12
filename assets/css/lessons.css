@@ -181,24 +181,24 @@ section#navigation li a:hover {
 
 section#navigation li a.prev-step {
   background-color: black;
-  text-align: left;
+  text-align: center;
   float: left;
   width: 50%;
   display: block;
   padding: 10px;
   position: relative;
-  left: -10px;
+  left: -3px;
 }
 
 section#navigation li a.next-step {
   background-color: black;
   color: white;
-  text-align: right;
+  text-align: center;
   display: block;
   padding: 10px;
-  width: 50%;
+  width: 48%;
   position: relative;
-  left: -10px;
+  left: -7px;
   float: right;
 }
 
