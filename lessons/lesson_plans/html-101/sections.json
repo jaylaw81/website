@@ -22,11 +22,6 @@
             "description" : "Forms allow us to send information and communicate with a web site."
         },
         {
-            "labelName" : "HTML5",
-            "section" : "intro-html5",
-            "description" : "HTML5 introduces us to new features, tags and fun!"
-        },
-        {
             "labelName" : "Testing &amp; Validation",
             "section" : "intro-testing",
             "description" : "Test, Test, Test! Make sure your web page works for everyone!"
