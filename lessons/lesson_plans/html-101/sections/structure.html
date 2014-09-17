@@ -1,8 +1,13 @@
 <section>
+
+    <!-- Popup's go here -->
+    <p id="structure-source" style="display:none" class="gist-code popup" data-gist="rhinocoders/77bb044a17301dfa2116"></p>
+    <!-- End Popup's go here -->
+
     <h3 id="intro-structure" class="section">HTML Structure</h3>
 
     <h4>Basic HTML Structure</h4>
-    <p>As we mentioned earlier Html is the skeleton or structure of a webpage. Lets dive right in with the essential elements and basic structure of a web page by creating a Hello World page. <br/>This is a common first exercise when learning any programming language. Below you'll notice the code sample of our page and the tags that make up this very basic page.</p><br/>
+    <p>Html is the structure of a webpage. Lets learn the essential elements and basic structure of a web page by creating a Hello World page. <br/>This is a common first exercise when learning any programming language. Below you'll notice the code sample of our page and the tags that make up this very basic page.</p><br/>
      <p class="gist-code" data-gist="rhinocoders/3d55d114602324ea5050"></p>
     <p>Let's take some time and create this page.</p> <p>Once you're done, let's save that as hello_world.html and preview in your browser by right clicking the saved file and choosing the firefox browser to preview the web page. If everything went well you should see your Hello World page.</p>
     <p>Now that we've built our first page lets talk about all of the elements that make up the structure of our page.</p>
@@ -49,7 +54,7 @@
     <li>An HTML element ends with an <b>end tag / closing tag</b></li>
     <li>The <b>element content</b> is everything between the start and the end tag</li>
     <li>Some HTML elements have <b>empty content</b></li>
-    <li>Empty elements are <b>closed in the start tag</b></li>
+    <li>Empty elements are closed in the start tag</li>
     <li>Most HTML elements can have <b>attributes</b> which we'll learn about later</li>
 </ul>
 
@@ -71,13 +76,14 @@
 <h5>This is a h5 heading</h5>
 <h6>This is a h6 heading</h6>
 <p>A span element is used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span></p>
+<br />
 <div style="background: #ccc;width:300px; height:100px;">
   <p>A div is a container used to layout and contain elements</p>
 </div>
-
+<br />
 
 <p>This is an anchor tag used to link to other web pages or other parts of the web page. <br />
-<a href="http://www.w3schools.com/" target="_blank">Click here to go to W3 Schools!</a></p>
+<a href="http://www.w3schools.com/" target="_blank">Click here to go to W3 Schools!</a></p><br />
 
 <!-- this is a comment great for leaving notes and clarifying the code -->
 <p>Below are examples of empty content elements</p>
@@ -86,8 +92,24 @@
 </p>
 <p>The break tag is an empty content element <br /> It allows you to place line breaks in the copy</p>
 
-
-
-
+<h3>Exploring Element Attributes</h3>
+<p>HTML elements can have <b>attributes</b>, which provide additional information about the element. Atrributes are always contained within the starting tag of an element. Let's look at a couple of elements that contain attributes.</p>
+<p class="gist-code" data-gist="rhinocoders/057c0a95f8dbe7f5284f"></p>
+<br>
+<p>Our first example is the image tag, which contains a number of attribute tags that tell the browser different thinga about the image element.</p>
+<ul><b>Image Attributes</b>
+<li><b>Width and Height</b> - tells the browser the height and width of the image.</li>
+<li><b>Title</b> - acts as a caption for the image and is displayed on hover.</li>
+<li><b>Alt</b> - provides alternate text when the image element cannot be displayed. This element is also used by screen readers to read content to users that are visiually impaired.</li>
+<li><ul><b>Anchor tag Attributes</b>
+    <li><b>href</b> Provides the destination URL or location for the anchor tag</li>
+    <li><b>target</b> Provides the target for the link will it open in the same tab or window using target="_self"? Or will it open in a new tab or window, target="_blank"</li>
+</ul>
+</li>
+</ul>
+  <img src="/assets/img/lessons/html-101/Meta-tags.jpg">
+<h3>What's a Meta tag and why are they important?</h3>
+<p>Metadata is "data about data". So that means we have descriptive information about our data object. For instance, contained within a .jpg or image file is more information about the picture like the date, time, and location where the image was taken. In the case of a website we use metadata or&lt;meta&gt; tags to describe our website and provide information about it. This helps search engines and users find our site.  Some common meta data attributes title, description, keywords and author. Let's take the time to fill out this information in your html template. </p>
+<p class="gist-code" data-gist="rhinocoders/9b83e354ac9dfeda34f5"></p>
 </section>
 
