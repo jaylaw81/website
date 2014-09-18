@@ -352,10 +352,6 @@ article#content section {
   margin-bottom: 100px;
 }
 
-article#content section:last-of-type {
-  margin-top: 100px;
-}
-
 article#content h3 {
   font-size: 30px;
   text-transform: uppercase;
