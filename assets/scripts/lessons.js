@@ -155,10 +155,9 @@ var lessons = {
             for(item in json.navItems){
                 var navLabel = json.navItems[item].labelName;
                 var navSection = json.navItems[item].section;
-                var navDesc = json.navItems[item].description;
                 var navSource = json.navItems[item].source;
 
-                var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a class="nav-title" href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
+                var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a class="nav-title" href="#'+navSection+'">'+navLabel+'</a>';
                 html += '<span class="steps"><a href="#" class="prev-step"><i class="icon-left-open"></i> <span class="steps-text">Previous Step</span></a> <a href="#" class="next-step"><span class="steps-text">Next Step</span> <i class="icon-right-open"></i></a>';
 
                 if(navSource != undefined){

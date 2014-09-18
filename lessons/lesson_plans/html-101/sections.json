@@ -2,34 +2,28 @@
     "navItems" : [
         {
             "labelName" : "Introduction",
-            "section" : "intro-html",
-            "description" : "Brief introduction into the history of HTML and why we use it."
+            "section" : "intro-html"
         },
         {
             "labelName" : "HTML Structure",
             "section" : "intro-structure",
-            "description" : "HTML is the structure of a webpage. Lets learn the essential elements and basic structure of a web page by creating a Hello World page. <br><br>This is a common first exercise when learning any programming language. Below you'll notice the code sample of our page and the tags that make up this very basic page.",
             "source": "structure-source"
         },
         {
             "labelName" : "HTML5 Tags",
-            "section" : "intro-tags",
-            "description" : "Tags give meaning to the content. They also give us functionality and style."
+            "section" : "intro-tags"
         },
         {
             "labelName" : "HTML Forms",
-            "section" : "intro-forms",
-            "description" : "Forms allow us to send information and communicate with a web site."
+            "section" : "intro-forms"
         },
         {
             "labelName" : "Testing &amp; Validation",
-            "section" : "intro-testing",
-            "description" : "Test, Test, Test! Make sure your web page works for everyone!"
+            "section" : "intro-testing"
         },
         {
             "labelName" : "Study Materials",
-            "section" : "intro-study",
-            "description" : "Learn more on your own."
+            "section" : "intro-study"
         }
     ]
 }
