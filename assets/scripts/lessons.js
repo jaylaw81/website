@@ -46,31 +46,36 @@ var lessons = {
     handleScroll: function(){
         var height = $(window).scrollTop();
         $window = $(window);
+        var speed = 200;
 
-        if(height > 200) {
-            $('.icon-up-circled2').fadeIn(200);
+        if(height > 20) {
+            $('.pi-section-header').parent().animate({
+                top: '-80px'
+            }, speed);
+            $('#header').animate({
+                top: '-40px'
+            }, speed);
+            $('#navigation').animate({
+                top: '0px'
+            }, speed);
         } else {
-            $('.icon-up-circled2').fadeOut(200);
+            $('.pi-section-header').parent().animate({
+                top: '0px'
+            }, speed);
+            $('#header').animate({
+                top: '48px'
+            }, speed);
+            $('#navigation').animate({
+                top: '92px'
+            }, speed);
         }
 
-        $('.section').each(function(){
-            if(lessons.isScrolling == false){
-                var topPos = $(this).offset().top - $(window).scrollTop();
-                var elemSel = ''
-                if(topPos <= 50){
-                    elemSel = $(this).attr('id');
-                    $('#navigation li').removeClass('active');
-                    $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
-                    $('a[href="#'+elemSel+'"]').parent().find('span').attr('class', 'icon-circle')
-                    $('a[href="#'+elemSel+'"]').parent().addClass('active');
-                }
-            }
-        });
+
     },
 
     events: function(){
 
-        /*
+
         var scrollTimer = null;
         $(window).scroll(function () {
             if (scrollTimer) {
@@ -78,7 +83,7 @@ var lessons = {
             }
             scrollTimer = setTimeout(lessons.handleScroll, 100);   // set new timer
         });
-*/
+
 
         $('.icon-up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
