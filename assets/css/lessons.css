@@ -20,7 +20,12 @@
     display: none;
   }
 
-  article#content section {page-break-after: always;}
+
+
+  article#content section {display: block !important; page-break-after: always;}
+  dl {
+    width: 90% !important;
+  }
 }
 
 @media only screen and (min-width : 320px) and (max-width : 640px) {
