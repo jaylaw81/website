@@ -24,7 +24,15 @@
   }
 }
 
+.glossary dl {
+  display: block !important;
+}
 
+.glossary [class^="icon-"]:before, [class*=" icon-"]:before {
+  margin-right: 0 !important;
+  padding-right: 0px !important;
+  width: 0.5em !important;
+}
 
 .sub-logo {
   display: block !important;
