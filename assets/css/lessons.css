@@ -186,6 +186,11 @@ position: relative;
 top: -3px;
 }
 
+section#navigation li:last-of-type a.next-step,
+section#navigation li:first-of-type a.prev-step {
+  visibility: hidden;
+}
+
 section#navigation li a.next-step {
 background-color: black;
 color: white;

@@ -172,8 +172,7 @@ var lessons = {
             $('section#navigation li:not(:first-of-type)').hide();
             $('#content section:first-of-type').addClass('section-open');
             $('section#navigation li:first-of-type').addClass('highlighted');
-            $('section#navigation li:first-of-type a.prev-step').hide();
-            $('section#navigation li:last-of-type a.next-step').hide();
+
 
             $('span.source-code a').on('mfpBeforeOpen', function(e){
                 e.preventDefault();
