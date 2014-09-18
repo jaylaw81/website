@@ -53,30 +53,35 @@
                                             <div class="mc-field-group">
                                                 <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
                                             </label>
-                                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="e.g. mail@example.com">
+                                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                                             </div>
                                             <div class="mc-field-group">
                                                 <label for="mce-FNAME">First Name </label>
-                                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="e.g. Adam">
+                                                <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
                                             </div>
                                             <div class="mc-field-group">
                                                 <label for="mce-LNAME">Last Name </label>
-                                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" placeholder="e.g. Smith">
+                                                <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
                                             </div>
                                             <div class="mc-field-group">
                                                 <label for="mce-MMERGE3">Why would you like to volunteer? </label>
-                                                <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3" placeholder="e.g. To give back to the community.">
+                                                <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
                                             </div>
                                                 <div id="mce-responses" class="clear">
                                                     <div class="response" id="mce-error-response" style="display:none"></div>
                                                     <div class="response" id="mce-success-response" style="display:none"></div>
                                                 </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+<<<<<<< HEAD
                                                 <div style="position: absolute; left: -5000px;">
                                                     <input type="text" name="b_f930a2178e7b320ee1288d825_3fed62d069" tabindex="-1" value="" class="form-control">
                                                 </div>
                                                 <div class="clear">
                                                     <input type="submit" value="Volunteer" name="subscribe" id="mc-embedded-subscribe" class="btn pi-btn-base">
                                                 </div>
+=======
+                                                <div style="position: absolute; left: -5000px;"><input type="text" name="b_43b285462ebc30384c9afdadb_b7f59f6573" tabindex="-1" value=""></div>
+                                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+>>>>>>> cd761276b7e27ba82e435bc8da5644c1c10bcddb
                                             </form>
                                             </div>
                                             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MMERGE3';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
@@ -94,13 +99,7 @@
                                 </h2>
 
                                 <ul class="pi-list-with-icons pi-list-big-margins pi-padding-bottom-10">
-                                    <li><span class="pi-bullet-icon"><i class="icon-location"></i></span>Volunteering may include any of the following:
-                                        <ul>
-                                            <li>Help students turning on/off computers and following along with lesson plan</li>
-                                            <li>Aid instructors with helping students</li>
-                                            <li>Notifying instructors if student(s) needs assistance with lesson</li>
-                                        </ul>
-                                        To volunteer, please fill out the form. We'll be in touch with you soon.</li>
+                                    <li><span class="pi-bullet-icon"><i class="icon-location"></i></span>Volunteer by filling out the form on the left. We'll be in touch with you soon.</li>
                                 </ul>
                                 <ul class="pi-social-icons pi-small pi-jump pi-colored-bg pi-round-corners pi-padding-bottom-10">
                                     <li><a href="https://www.facebook.com/pages/RhinoCoders/526037147523914" class="pi-social-icon-facebook"><i class="icon-facebook"></i></a></li>
