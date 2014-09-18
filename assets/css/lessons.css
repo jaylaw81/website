@@ -186,9 +186,16 @@ position: relative;
 top: -3px;
 }
 
-section#navigation li:last-of-type a.next-step,
+section#navigation li:last-of-type a.next-step {
+  display: none;
+}
 section#navigation li:first-of-type a.prev-step {
   visibility: hidden;
+}
+
+section#navigation li:last-of-type a.prev-step {
+  float: right;
+  left: 0px;
 }
 
 section#navigation li a.next-step {
