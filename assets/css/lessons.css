@@ -36,6 +36,16 @@
     top: 0px !important;
   }
 
+  section#header h1 {
+    position: relative !important;
+    top: -2px !important;
+    font-size: 100% !important;
+  }
+
+  dl {
+    width: 100% !important;
+  }
+
   section#navigation {
     top: 44px !important;
   }
