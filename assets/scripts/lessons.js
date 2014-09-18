@@ -84,7 +84,7 @@ var lessons = {
 
             $('#content section.section-open').removeClass('section-open').hide();
             nextContentSection.addClass('section-open').show();
-
+            window.scrollTo(0, 0);
             //console.log(nextSection);
         });
 
@@ -98,7 +98,7 @@ var lessons = {
 
             $('#content section.section-open').removeClass('section-open').hide();
             prevContentSection.addClass('section-open').show();
-
+            window.scrollTo(0, 0);
             //console.log(nextSection);
         });
 
