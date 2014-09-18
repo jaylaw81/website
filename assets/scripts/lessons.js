@@ -20,6 +20,7 @@ var lessons = {
             lessons.embedGists();
             lessons.getNav(lessonPlan);
             lessons.sections();
+            lessons.glossary();
         });
 
         lessons.events();
@@ -29,7 +30,17 @@ var lessons = {
 
         $('article#content section:not(:first)').hide();
 
+    },
 
+    glossary: function(){
+        var terms = $('dl.definition');
+        var elem;
+        $.each(terms, function(i, el){
+            elem = $(el);
+            $(elem).clone().appendTo('.glossary');
+        });
+
+        $('div.glossary dl').tsort('dt' , {order:'asc'} );
     },
 
     handleScroll: function(){

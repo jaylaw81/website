@@ -1,5 +1,9 @@
 @import url(hover.css);
 
+
+
+
+
 .addthis_sharing_toolbox {
   width: 72%;
   margin: 0 auto;
@@ -348,10 +352,6 @@ article#content section {
   margin-bottom: 100px;
 }
 
-article#content section:last-of-type {
-  margin-top: 100px;
-}
-
 article#content h3 {
   font-size: 30px;
   text-transform: uppercase;
@@ -382,17 +382,27 @@ article#content h3:after {
   background: white url('../img/bg-heading.png');
 }
 
+article#content dl {
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow:    0px 0px 2px 0px rgba(50, 50, 50, 0.3);
+  box-shadow:         0px 0px 2px 0px rgba(50, 50, 50, 0.3);
+  padding: 10px;
+  width: 50%;
+}
+
 article#content dt {
-  font-weight: bold;
-  font-size: 18px;
-  color: #21adde;
+font-weight: bold;
+font-size: 18px;
+color: #000;
+position: relative;
+padding-left: 43px;
 }
 
 article#content dd {
-  font-style: italic;
-  padding: 5px 0 0 0;
-  font-size: 14px;
-  line-height: 20px;
+padding: 1px 10px 10px 43px;
+font-size: 14px;
+line-height: 20px;
+margin: 0;
 }
 
 article#content img {
@@ -401,10 +411,11 @@ article#content img {
 }
 
 article#content span.icon-book {
-  font-size: 16px;
-  position: relative;
-  top: -1px;
-  color: #e86343;
+font-size: 33px;
+position: absolute;
+top: 20px;
+color: #e86343;
+left: 5px;
 }
 
 /* back to classes */
