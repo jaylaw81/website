@@ -1,9 +1,5 @@
 @import url(hover.css);
 
-
-
-
-
 .addthis_sharing_toolbox {
   width: 72%;
   margin: 0 auto;
@@ -28,75 +24,7 @@
   }
 }
 
-@media only screen and (min-width : 320px) and (max-width : 640px) and (min-device-width : 320px) and (max-device-width : 640px) {
 
-  .addthis_sharing_toolbox,
-  .pi-section-header,
-  .source-code,
-  .steps-text {
-    display: none !important;
-  }
-
-  section#header {
-    top: 0px !important;
-  }
-
-  section#header h1 {
-    position: relative !important;
-    top: -2px !important;
-    font-size: 100% !important;
-  }
-
-  dl {
-    width: 100% !important;
-  }
-
-  section#navigation {
-    top: 44px !important;
-  }
-
-  article#content {
-    top: 98px !important;
-  }
-
-  .prev-step,
-  .next-step {
-    width: 50px !important;
-    max-width: 50px !important;
-    min-width: 50px !important;
-  }
-
-  .steps {
-    width: 50% !important;
-
-  }
-
-  .sub-logo {
-    display: block !important;
-    position: absolute !important;
-    left: 15px !important;
-    top: 11px !important;
-    width: 100% !important;
-    height: 50% !important;
-    z-index: 99999 !important;
-  }
-
-  .icon-reply,
-  .pi-header-block {
-    display: none !important;
-  }
-
-  article#content {
-    width: 100% !important;
-
-
-  }
-
-  h3 {
-    font-size: 24px !important;
-  }
-
-}
 
 .sub-logo {
   display: block !important;
@@ -462,4 +390,74 @@ left: 5px;
 
 .icon-reply:hover {
   color: #000;
+}
+
+@media only screen and (min-width : 320px) and (max-width : 640px) and (min-device-width : 320px) and (max-device-width : 640px) {
+
+  .addthis_sharing_toolbox,
+  .pi-section-header,
+  .source-code,
+  .steps-text {
+    display: none !important;
+  }
+
+  section#header {
+    top: 0px !important;
+  }
+
+  section#header h1 {
+    position: relative !important;
+    top: -2px !important;
+    font-size: 100% !important;
+  }
+
+  dl {
+    width: 100% !important;
+  }
+
+  section#navigation {
+    top: 44px !important;
+  }
+
+  article#content {
+    top: 98px !important;
+  }
+
+  .prev-step,
+  .next-step {
+    width: 50px !important;
+    max-width: 50px !important;
+    min-width: 50px !important;
+  }
+
+  .steps {
+    width: 50% !important;
+
+  }
+
+  .sub-logo {
+    display: block !important;
+    position: absolute !important;
+    left: 15px !important;
+    top: 11px !important;
+    width: 100% !important;
+    height: 50% !important;
+    z-index: 99999 !important;
+  }
+
+  .icon-reply,
+  .pi-header-block {
+    display: none !important;
+  }
+
+  article#content {
+    width: 100% !important;
+
+
+  }
+
+  h3 {
+    font-size: 24px !important;
+  }
+
 }
