@@ -1,19 +1,56 @@
 @import url(hover.css);
 
+.addthis_sharing_toolbox {
+  width: 72%;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  top: -19px;
+}
+
 @media print {
   .icon-up-circled2,
   #header,
-  .pi-section-header,
-  #navigation {
+  .pi-section-header
+   {
     display: none;
   }
 
   article#content section {page-break-after: always;}
 }
 
-@media only screen
-and (min-width : 320px)
-and (max-width : 640px) {
+@media only screen and (min-width : 320px) and (max-width : 640px) {
+
+  .addthis_sharing_toolbox,
+  .pi-section-header,
+  .source-code,
+  .steps-text {
+    display: none !important;
+  }
+
+  section#header {
+    top: 0px !important;
+  }
+
+  section#navigation {
+    top: 44px !important;
+  }
+
+  article#content {
+    top: 98px !important;
+  }
+
+  .prev-step,
+  .next-step {
+    width: 50px !important;
+    max-width: 50px !important;
+    min-width: 50px !important;
+  }
+
+  .steps {
+    width: 50% !important;
+
+  }
 
   .sub-logo {
     display: block !important;
@@ -26,15 +63,14 @@ and (max-width : 640px) {
   }
 
   .icon-reply,
-  .pi-header-block,
-  section#navigation {
+  .pi-header-block {
     display: none !important;
   }
 
   article#content {
     width: 100% !important;
-    padding: 20px;
-    left: 0px !important;
+
+
   }
 
   h3 {
@@ -81,30 +117,35 @@ a.external_link {
 }
 
 .gist-meta { display: none; }
+.gist .file-data {
+  font-size: 18px !important;
+}
 
 section#header {
   position: fixed;
   top: 48px;
   left: 0;
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255,255,255,1);
   color: #333;
-  width: 320px;
+  width: 100%;
   height: 44px;
   padding: 11px 0 0 20px;
   font-weight: 600;
   font-size: 21px;
+  z-index: 1000;
 }
 
 section#navigation {
-  position: fixed;
-  width: 317px;
-  top: 93px;
-  background-color: #21252b;
-  color: white;
-  left: 0;
-  height: 100%;
-  overflow: auto;
-  border-left: 10px solid rgba(255,255,255,.1);
+position: fixed;
+width: 100%;
+top: 92px;
+background-color: #21252b;
+color: white;
+left: 0px;
+height: 54px;
+overflow: hidden;
+border-left: 10px solid rgba(255,255,255,.1);
+z-index: 1000;
 }
 
 
@@ -157,6 +198,7 @@ section#navigation li.active span.icon-circle {
 section#navigation li span.nav-desc {
   padding: 10px;
   font-size: 12px;
+  display: none;
 }
 
 
@@ -180,26 +222,30 @@ section#navigation li a:hover {
 }
 
 section#navigation li a.prev-step {
-  background-color: black;
-  text-align: center;
-  float: left;
-  width: 50%;
-  display: block;
-  padding: 10px;
-  position: relative;
-  left: -3px;
+background-color: black;
+text-align: center;
+float: left;
+width: 20%;
+min-width: 120px;
+display: block;
+padding: 10px;
+position: relative;
+top: -3px;
 }
 
 section#navigation li a.next-step {
-  background-color: black;
-  color: white;
-  text-align: center;
-  display: block;
-  padding: 10px;
-  width: 48%;
-  position: relative;
-  left: -7px;
-  float: right;
+background-color: black;
+color: white;
+text-align: center;
+display: block;
+padding: 10px;
+width: 20%;
+min-width: 120px;
+position: relative;
+/* left: -7px; */
+float: left;
+margin: 0 auto;
+top: -3px;
 }
 
 section#navigation li a.prev-step:hover,
@@ -207,7 +253,10 @@ section#navigation li a.next-step:hover {
   background-color: #21adde;
 }
 
-
+section#navigation li a.nav-title {
+  position: relative;
+  top: 7px;
+}
 
 
 section#navigation li span {
@@ -217,13 +266,29 @@ section#navigation li span {
   display: block;
 }
 
-section#navigation li span.source-code {
-  font-size: 10px;
+section#navigation li span.steps-text {
+  font-size: 13px;
+  text-align: left;
+  float: none;
+  display: inline-block;
   text-align: center;
-  width: 100%;
-  position: relative;
-  left: -13px;
-  margin-top: 10px;
+}
+
+section#navigation li span.steps {
+  width: 75%;
+  float: right;
+  text-align: center;
+}
+
+section#navigation li span.source-code {
+font-size: 10px;
+text-align: center;
+width: 20%;
+position: relative;
+/* left: -13px; */
+/* margin-top: 10px; */
+float: left;
+top: -3px;
 }
 
 section#navigation li span.source-code a {
@@ -238,6 +303,8 @@ section#navigation li span.source-code a {
 
 section#navigation li span.icon-circle.blank {
   color: #e06e52;
+  top: 7px;
+  position: relative;
 }
 
 section#navigation li span.icon-circle {
@@ -268,24 +335,14 @@ section#navigation li span.icon-circle {
 
 article#content {
   position: relative;
-  width: 75%;
-  left: 320px;
+  width: 100%;
   background: white;
-  padding: 58px 43px 40px 43px;
+  padding: 11px 43px 40px 43px;
   height: 100%;
+  top: 147px;
 }
 
-  @media only screen and (min-width : 1224px) {
-    article#content {
-      width: 67%;
-    }
-  }
 
-  @media only screen and (min-width : 1824px) {
-    article#content {
-      width: 70%;
-    }
-  }
 
 article#content section {
   margin-bottom: 100px;
@@ -368,13 +425,7 @@ article#content span.icon-book {
 }
 
 .icon-reply {
-  position: fixed;
-  top: 66px;
-  right: 13px;
-  z-index: 999;
-  font-size: 35px;
-  color: rgba(0,0,0,.2);
-  cursor: pointer;
+   display: none;
 }
 
 .icon-reply:hover {

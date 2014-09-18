@@ -142,13 +142,13 @@ var lessons = {
                 var navDesc = json.navItems[item].description;
                 var navSource = json.navItems[item].source;
 
-                var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
-                html += '<a href="#" class="prev-step"><i class="icon-left-open"></i> Previous Step</a> <a href="#" class="next-step">Next Step <i class="icon-right-open"></i></a>';
+                var html = '<li data-section="'+navSection+'" class="shadow-radial"><span class="icon-circle blank"></span><a class="nav-title" href="#'+navSection+'">'+navLabel+'</a> <span class="nav-desc">'+navDesc+'</span>';
+                html += '<span class="steps"><a href="#" class="prev-step"><i class="icon-left-open"></i> <span class="steps-text">Previous Step</span></a> <a href="#" class="next-step"><span class="steps-text">Next Step</span> <i class="icon-right-open"></i></a>';
 
                 if(navSource != undefined){
-                    html += '<span class="source-code"><a href="#'+navSource+'"><i class="icon-code"></i> View Source Code <i class="icon-code"></i></a></span></li>';
+                    html += '<span class="source-code"><a href="#'+navSource+'"><i class="icon-code"></i> View Source Code <i class="icon-code"></i></a></span></span></li>';
                 } else {
-                    html += '</li>';
+                    html += '</span></li>';
                 }
 
                 $('#navigation ul').append(html);
