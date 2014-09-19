@@ -51,10 +51,10 @@ var rc = {
 $(document).ready(function(){
     rc.init();
 
-    $("#send-contact").on("click", function(){
-        var name = $("#rc-contact-form .form-control-name").val();
-        var email = $("#rc-contact-form .form-control-email").val();
-        var mess = $("#rc-contact-form .form-control-message").val();
+    $("#send-contact, #contact-footer").on("click", function(){
+        var name = $("#rc-contact-form .form-control-name, .pi-footer-form .form-control-name").val();
+        var email = $("#rc-contact-form .form-control-email, .pi-footer-form .form-control-email").val();
+        var mess = $("#rc-contact-form .form-control-message, .pi-footer-form .form-control-message").val();
 
         if(name == "" || email == "" || mess == "") {
 
