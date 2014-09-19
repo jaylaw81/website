@@ -63,7 +63,7 @@ $(document).ready(function(){
         } else {
             $.post(
 
-                "../assets/resources/contact.php", {
+                "/assets/resources/contact.php", {
                     name: name,
                     email: email,
                     mess: mess
