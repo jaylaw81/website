@@ -58,7 +58,7 @@ $(document).ready(function(){
 
         if(name == "" || email == "" || mess == "") {
 
-            $(".pi-contact-form .error-message").slideDown(700).delay(2000).slideUp(300);
+            $(".pi-contact-form .error-message, .pi-footer-form .error-message").slideDown(700).delay(2000).slideUp(300);
 
         } else {
             $.post(
@@ -71,7 +71,7 @@ $(document).ready(function(){
 
                 function(response) {
 
-                    $(".pi-contact-form .success-message").slideDown(700).delay(2000).slideUp(300);
+                    $(".pi-contact-form .success-message, .pi-footer-form .success-message").slideDown(700).delay(2000).slideUp(300);
 
                 }
             )
