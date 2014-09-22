@@ -1,5 +1,10 @@
 @import url(hover.css);
 
+.fall {
+  display: inline-block;
+  cursor: pointer;
+}
+
 .addthis_sharing_toolbox {
   width: 72%;
   margin: 0 auto;
@@ -378,12 +383,42 @@ article#content img {
   position: relative;
 }
 
+article#content .image-caption {
+  position: relative;
+  width: 100%;
+  min-height: 747px;
+}
+
+article#content .image-caption img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1
+}
+
+article#content .image-caption p {
+  padding: 10px;
+  background-color: rgba(255,255,255, .8);
+  position: relative;
+  top: 290px;
+  z-index: 2;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+article#content .image-caption p:first-of-type {
+  font-size: 40px;
+  line-height: 100%;
+}
+
 article#content span.icon-book {
 font-size: 33px;
 position: absolute;
 top: 20px;
 color: #e86343;
 left: 5px;
+
 }
 
 /* back to classes */

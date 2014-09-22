@@ -118,6 +118,18 @@ var lessons = {
             //console.log(nextSection);
         });
 
+        /* animations */
+
+
+
+        $(document).on({
+            mouseenter: function(){
+                $(this).addClass('animated hinge');
+            },
+            mouseleave: function(){
+                $(this).removeClass('animated hinge');
+            }
+        }, '.fall');
 
 
 
