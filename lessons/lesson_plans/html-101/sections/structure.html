@@ -7,10 +7,8 @@
     <h3 id="intro-structure" class="section">HTML Structure</h3>
 
     <h4>Basic HTML Structure</h4>
-    <p>HTML is the structure of a webpage. Lets learn the essential elements and basic structure of a web page by creating a Hello World page. <br/>This is a common first exercise when learning any programming language. Below you'll notice the code sample of our page and the tags that make up this very basic page.</p><br/>
-     <p class="gist-code" data-gist="rhinocoders/3d55d114602324ea5050"></p>
-    <p>Let's take some time and create this page.</p> <p>Once you're done, let's save that as hello_world.html and preview in your browser by right clicking the saved file and choosing the firefox browser to preview the web page. If everything went well you should see your Hello World page.</p>
-    <p>Now that we've built our first page lets talk about all of the elements that make up the structure of our page.</p>
+    <p>HTML is the structure of a webpage. Lets learn the essential elements and basic structure of a web page by creating a Hello World page. <br/>This is a common first exercise when learning any programming language. Below you'll notice the code sample of our page and the tags that make up this very basic page.</p>
+    <p>Before we buil our first page lets talk about all of the elements that make up the structure of our page.</p>
     <ol>
         <li>
         The &lt;!DOCTYPE html&gt; declaration tag. This communicates to the browser what version of html the page is written in. Please note that this tag does not have a closing tag.
@@ -22,8 +20,7 @@
         </li>
         <li>The  &lt;body&gt; tag contains all of the contents of the html document, text, images , videos, lists, etc.</li>
         <li>The &lt;h1&gt; tag is a heading tag which contains our Hello world text.</li>
-    </ol>
-
+    </ol><br />
     <dl class="definition" style="display:none">
         <dt><span class="icon-book"></span> DOCTYPE declaration tag</dt>
         <dd>
@@ -45,9 +42,11 @@
         </dd>
     </dl>
 
-    <h4>HTML Syntax</h4>
+    <p class="gist-code" data-gist="rhinocoders/3d55d114602324ea5050"></p>
+    <p>Now let's take some time and create this page.</p> <p>Once you're done, let's save that as hello_world.html and preview in your browser by right clicking the saved file and choosing the firefox browser to preview the web page. If everything went well you should see your Hello World page.</p>
     <p>Now that we've created our Hello world page, did any of you have problems getting the page to display correctly?<br> In web development, often when we have an issue with a page rendering correctly or a script not working correctly it's a <strong>syntax</strong> error.<p>
-    <img src="/assets/img/lessons/html-101/syntax_error.jpg">
+
+    <!-- <img src="/assets/img/lessons/html-101/syntax_error.jpg"> -->
     <h3>What is syntax?</h3>
 
     <dl class="definition">
@@ -57,74 +56,234 @@
         </dd>
     </dl>
 
-    <p>HTML documents are defined by HTML elements. The element content is everything between the start and the end tag. Below is a table which gives us examples of the correct syntax.</p>
+    <h3>HTML Element Syntax</h3>
+    <!-- <p>HTML documents are defined by the HTML elements it contains.</p> -->
+    <p>The elements of an HTML document need to be structured with the proper syntax in order for the page to be viewed correctly.</p>
+    <ul>
+        <li>An HTML element starts with a <b>start tag / opening tag</b> : &lt;p&gt;</li>
+        <li>An HTML element ends with an <b>end tag / closing tag</b> : &lt;/p&gt;</li>
+        <li>The <b>element content</b> is everything between the start and the end tag</li>
+        <li>Some HTML elements have <b>empty content</b>
+            <ul>
+                <li>Empty elements are closed in the start tag : &lt;br /&gt;</li>
+            </ul>
+        </li>
+        <li>Most HTML elements can have <b>attributes</b> which we'll learn about later</li>
+    </ul>
+
+    <p>Below is a table which gives us basic examples of the correct syntax.</p>
     <table border="1" style="width:100%">
         <tr style="background: #ccc;">
-            <th style="width:33%">Start tag *</th>
+            <th style="width:33%">Open - Start tag *</th>
             <th style="width:33%">Element content</th>
-            <th>End tag *</th>
+            <th>Close - End tag *</th>
         </tr>
         <tr>
             <td>&lt;p&gt;</td>
-            <td>This is a paragraph</td>
+            <td>I'm a paragraph and I like to tell you things.</td>
             <td>&lt;/p&gt;</td>
         </tr>
         <tr>
-            <td>&lt;a href=&quot;default.htm&quot;&gt;</td>
-            <td>This is a link</td>
-            <td>&lt;/a&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;br&gt;</td>
-            <td>&nbsp;</td>
+            <td>&lt;br /&gt;</td>
+            <td>I don't have any content. All I do is create<br>a new line between other tags or content.</td>
             <td>&nbsp;</td>
         </tr>
     </table>
 
-    <h3>HTML Element Syntax</h3>
-<ul>
-    <li>An HTML element starts with a <b>start tag / opening tag</b></li>
-    <li>An HTML element ends with an <b>end tag / closing tag</b></li>
-    <li>The <b>element content</b> is everything between the start and the end tag</li>
-    <li>Some HTML elements have <b>empty content</b></li>
-    <li>Empty elements are closed in the start tag</li>
-    <li>Most HTML elements can have <b>attributes</b> which we'll learn about later</li>
-</ul>
-
-<h3>Common HTML Tags</h3>
-<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the code block below we can see the actual mark up and below that we can see how the browser renders each element.</p>
-<br />
+<h3>Common HTML Tags - Also known as Elements</h3>
+<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element.</p>
+<!-- <br />
 <p class="gist-code" data-gist="rhinocoders/44dcfe90c6ad12123be9"></p>
-<br/>
+<br/> -->
 
+<p>HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
+<h4>Container Tags / Element Examples: HTML4</h4>
+<table border="1" style="width:100%" class="demonstration-code">
+    <tr style="background: #ccc;">
+        <th style="width:33%">Element</th>
+        <th style="width:33%">Code View</th>
+        <th style="width:33%">Rendered View</th>
+    </tr>
+    <tr>
+        <td>Paragraph : &lt;p&gt;&lt;/p&gt;</td>
+        <td>&lt;p&gt;I'm a paragraph and I like to tell you things.&lt;/p&gt;</td>
+        <td><p>I'm a paragraph and I like to tell you things.</p></td>
+    </tr>
+    <tr>
+        <td>Div : &lt;div&gt;&lt;/div&gt;</td>
+        <td>
+            A div is a container element used to layout and contain other elements.
+            <br>&lt;div&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;My parent is a DIV and I am one of its first child.&lt;p&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;I'm one of the siblings - like a brother or sister.&lt;p&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;I'm the other sibling&lt;p&gt;<br>
+            &lt;/div&gt;
+        </td>
+        <td>
+            A div is a container used to layout and contain elements
+            <div style="background: #ccc;width:300px; height:115px;">
+              <p style="margin-top:0px;">Our parent is a DIV and I am its first-child.</p>
+              <p>I'm one of the siblings - like a brother or sister.</p>
+              <p>I'm the another sibling but they call me the last-child.</p>
+            </div>
+        </td>
+    </tr>
+</table>
+<br><br>
+<h4>Format Tags / Element Examples: HTML4</h4>
+<table border="1" style="width:100%" class="demonstration-code">
+    <tr style="background: #ccc;">
+        <th style="width:33%">Element</th>
+        <th style="width:33%">Code View</th>
+        <th style="width:33%">Rendered View</th>
+    </tr>
+    <tr>
+        <td>Span : &lt;span&gt;&lt;/span&gt;</td>
+        <td>I'm a span element and I'm used to group text inline and make changes to it. &lt;span style="color:blue"&gt;Like turning the text blue!&lt;/span&gt;</td>
+        <td>I'm a span element and I'm used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span></td>
+    </tr>
+    <tr>
+        <td>Bold : &lt;b&gt;&lt;/b&gt;</td>
+        <td>I'm a &lt;b&gt;BOLD&lt;/b&gt; tag and I make words look think and puffy.</td>
+        <td>I'm a <b>BOLD</b> tag and I make words look think and puffy.</td>
+    </tr>
+    <tr>
+        <td>Italic : &lt;i&gt;&lt;/i&gt;</td>
+        <td>I'm a &lt;i&gt;Itallic&lt;/i&gt; tag and I make words look like they are leaning forward.</td>
+        <td>I'm a <i>Itallic</i> tag and I make words look like they are leaning forward.</td>
+    </tr>
+    <tr>
+        <td>Underline : &lt;u&gt;&lt;/u&gt;</td>
+        <td>I'm a &lt;u&gt;Underline&lt;/u&gt; tag and I make words look like they have a line under them.</td>
+        <td>I'm a <u>Underline</u> tag and I make words look like they have a line under them.</td>
+    </tr>
+</table>
+<br><br>
+<h4>Headline Tags / Element Examples: HTML4</h4>
+<p>Heading tags are another way to format text. Below we see and example of headline tags. There are six levels of the headline tag. The lower the number, the larger the size of the words. In later courses you will learn how to control and override the sizes of these elements as they appear to users.</p>
+<table border="1" style="width:100%" class="demonstration-code">
+    <tr style="background: #ccc;">
+        <th style="width:33%">Element</th>
+        <th style="width:33%">Code View</th>
+        <th style="width:33%">Rendered View</th>
+    </tr>
+    <tr>
+        <td>Headline Size 1 : &lt;h1&gt;&lt;/h1&gt;</td>
+        <td>&lt;h1&gt;I am the largest of the headline tags&lt;/h1&gt;</td>
+        <td><h1>I am the largest of the headline tags</h1></td>
+    </tr>
+    <tr>
+        <td>Headline Size 2 : &lt;h2&gt;&lt;/h2&gt;</td>
+        <td>&lt;h2&gt;I am the second largest headline&lt;/h2&gt;</td>
+        <td><h2>I am the second largest headline</h2></td>
+    </tr>
+    <tr>
+        <td>Headline Size 3 : &lt;h3&gt;&lt;/h3&gt;</td>
+        <td>&lt;h3&gt;I am the third largest headline&lt;/h3&gt;</td>
+        <td><h3>I am the third largest headline</h3></td>
+    </tr>
+</table>
+<br><br>
+
+
+<h4>Empty Tags / Element Examples: HTML4</h4>
+<p>Elements are referred to as empty they do not have content contained between an OPEN and CLOSE tags</p>
+<table border="1" style="width:100%" class="demonstration-code">
+    <tr style="background: #ccc;">
+        <th style="width:33%">Element</th>
+        <th style="width:33%">Code View</th>
+        <th style="width:33%">Rendered View</th>
+    </tr>
+    <tr>
+        <td>Image : &lt;img /&gt;</td>
+        <td>I'm an Image tag and I like to show you pictures like this <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!"> in web pages.</td>
+        <td>I'm an Image tag and I like to show you pictures like this <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!"> in web pages.</td>
+    </tr>
+    <tr>
+        <td>Break : &lt;br /&gt;</td>
+        <td>I'm a Break tag &lt;br /&gt; I don't have any content. All I do is create&lt;br /&gt;a new line space&lt;br /&gt;between other tags or content.</td>
+        <td>I'm a Break tag <br /> I don't have any content. All I do is create<br />a new line space<br />between other tags or content.</td>
+    </tr>
+    <tr>
+        <td>Horizontal Row : &lt;hr /&gt;</td>
+        <td>I'm a Horizontal Row tag and I don't have any content. All I do is create &lt;hr /&gt;a visible line&lt;hr /&gt;between other tags or content.</td>
+        <td>I'm a Horizontal Row tag and I don't have any content. All I do is create <hr />a visible line<hr />between other tags or content.</td>
+    </tr>
+</table>
+<br><br>
+
+<h4>Clickable Tags / Elements Examples: HTML4</h4>
+<table border="1" style="width:100%" class="demonstration-code">
+    <tr style="background: #ccc;">
+        <th style="width:33%">Element</th>
+        <th style="width:33%">Code View</th>
+        <th style="width:33%">Rendered View</th>
+    </tr>
+    <tr>
+        <td>Anchor : &lt;a&gt;&lt;/a&gt;</td>
+        <td>I am an anchor tag and I am used to link to other web pages or other parts of the web page. &lt;a href=&quot;default.htm&quot;&gt;I'm a link - Click ME :)&lt;/a&gt;</td>
+        <td>I am an anchor tag and I am used to link to other web pages or other parts of the web page. <a href="#anchor-clicked">I'm a link - Click ME :)</a></td>
+    </tr>
+    <tr>
+        <td>Radio : &lt;input type="radio"&gt;</td>
+        <td>
+            I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
+            &lt;input type="radio" name="kid" value="bobby"&gt;<label>Bobby</lable>
+            &lt;input type="radio" name="kid" value="jessica"&gt;&lt;label&gt;Jessica&lt;/lable&gt;
+        </td>
+        <td>
+            I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
+            <input type="radio" name="kid" value="bobby"><label>Bobby</lable>
+            <input type="radio" name="kid" value="jessica"><label>Jessica</lable>
+        </td>
+    </tr>
+    <tr>
+        <td>Checkbox : &lt;input type="checkbox"&gt;</td>
+        <td>
+            I am a Checkbox button and you will always see me with at least one sibling. We all want to play and all or none of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
+            &lt;input type="checkbox" name="kid" value="bobby"&gt;<label>Bobby</lable>
+            &lt;input type="checkbox" name="kid" value="jessica"&gt;&lt;label&gt;Jessica&lt;/lable&gt;
+        </td>
+        <td>
+            I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
+            <input type="checkbox" name="kid" value="bobby"><label>Bobby</lable>
+            <input type="checkbox" name="kid" value="jessica"><label>Jessica</lable>
+        </td>
+    </tr>
+</table>
+
+
+<!-- 
 <p>This is a paragraph</p>
 <p>HTML also has text formatting tags like the strong tag which makes text <strong>bold</strong>.</p>
 <p>Another text formatting tag is the emphasis tags which renders the text in <em>italics</em></p>
-<p>Heading tags are another way to format text below we see the six heading tags</p>
+
+ -->
+<!-- <p>Heading tags are another way to format text below we see the six heading tags</p>
 
 <h1>This is a h1 heading</h1>
 <h2>This is a h2 heading</h2>
 <h3>This is a h3 heading</h3>
 <h4>This is a h4 heading</h4>
 <h5>This is a h5 heading</h5>
-<h6>This is a h6 heading</h6>
-<p>A span element is used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span></p>
-<br />
-<div style="background: #ccc;width:300px; height:100px;">
+<h6>This is a h6 heading</h6> -->
+<!-- <p>A span element is used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span></p>
+<br /> -->
+<!-- <div style="background: #ccc;width:300px; height:100px;">
   <p>A div is a container used to layout and contain elements</p>
-</div>
-<br />
+</div> -->
 
-<p>This is an anchor tag used to link to other web pages or other parts of the web page. <br />
+
+<!-- <p>This is an anchor tag used to link to other web pages or other parts of the web page. <br />
 <a href="http://www.w3schools.com/" target="_blank">Click here to go to W3 Schools!</a></p><br />
-
+ -->
 <!-- this is a comment great for leaving notes and clarifying the code -->
-<p>Below are examples of empty content elements</p>
+<!-- <p>Below are examples of empty content elements</p>
 <p> This is an image tag which allows us to place pictures on the page.<br/>
 <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!">
 </p>
 <p>The break tag is an empty content element <br /> It allows you to place line breaks in the copy</p>
-
+ -->
 <h3>Exploring Element Attributes</h3>
 <p>HTML elements can have <b>attributes</b>, which provide additional information about the element. Atrributes are always contained within the starting tag of an element. Let's look at a couple of elements that contain attributes.</p>
 <p class="gist-code" data-gist="rhinocoders/057c0a95f8dbe7f5284f"></p>
