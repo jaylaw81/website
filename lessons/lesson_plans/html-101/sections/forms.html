@@ -1,31 +1,28 @@
 <section>
 
-    <!-- Popup's go here -->
-    <!-- Example -->
-    <!--p id="structure-source" style="display:none" class="gist-code popup" data-gist="rhinocoders/77bb044a17301dfa2116"></p-->
-    <!-- End Popup's go here -->
+    <p id="structure-source" style="display:none" class="gist-code popup" data-gist="rhinocoders/77bb044a17301dfa2116"></p>
 
-    <h3 id="intro-forms" class="section">HTML Forms</h3>
+    <article>
+        <h3 id="intro-forms" class="section">HTML Forms</h3>
 
-    <dl class="definition">
-        <dt><span class="icon-book"></span> Forms</dt>
-        <dd>
-            Forms are used to collect data inputted by a user. They can be used as an interface for a web application, for example, or to send data across the web.
-        </dd>
-    </dl>
+        <dl class="definition">
+            <dt><span class="icon-book"></span> Forms</dt>
+            <dd>
+                Forms are used to collect data inputted by a user. They can be used as an interface for a web application, for example, or to send data across the web.
+            </dd>
+        </dl>
 
-    <p>The basic tags used in the actual HTML of forms are form, input, textarea, select and option.</p>
+        <p>The basic tags used in the actual HTML of forms are form, input, textarea, select and option.</p>
 
-    <div class="col">
+    </article>
+
+    <article class="col">
 
         <h4><code>&lt;form&gt;</code></h4>
 
-        <p>
-            The<code>form</code>element defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.
-        </p>
-        <p>
-            The  <code>method </code> attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.
-        </p>
+        <p>The<code>form</code>element defines the form and within this tag, if you are using a form for a user to submit information (which we are assuming at this level), an action attribute is needed to tell the form where its contents will be sent to.</p>
+
+        <p>The  <code>method </code> attribute tells the form how the data in it is going to be sent and it can have the value get, which is default, and latches the form information onto a web address, or post, which (essentially) invisibly sends the form’s information.</p>
 
         <dl class="definition" style="display:none">
             <dt><span class="icon-book"></span> Forms <i class="icon-angle-right"></i> Form Tag <i class="icon-angle-right"></i> Attribute: method</dt>
@@ -34,103 +31,69 @@
             </dd>
         </dl>
 
-        <p>
-            <code>get</code> is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.
-        </p>
+        <p><code>get</code> is used for shorter chunks of non-sensitive information - you might see the information you have submitted in a web site’s search to appear in the web address of its search results page, for example. post is used for lengthier, more secure submissions, such as in contact forms.</p>
 
         <p class='gist-code' data-gist="rhinocoders/dd744aedf8678f5087be"></p>
 
+        <h4><code>&lt;input&gt;</code></h4>
 
+        <p>The<code>input</code>tag is the daddy of the form world. It can take a multitude of use cases, the most common of which are text, password, checkbox, radio and submit which are outlined below.</p>
 
-        <h4>
-            <code>&lt;input&gt;</code>
-        </h4>
+        <p><code>&lt;input type="text"&gt;</code> or simply <input> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.</p>
 
-        <p>
-            The<code>input</code>tag is the daddy of the form world. It can take a multitude of use cases, the most common of which are text, password, checkbox, radio and submit which are outlined below.
-        </p>
+        <p><code>&lt;input type="password"&gt;</code>
+        <input type="password" value="hiddenpassword"> is similar to the textbox, but the characters typed in by the user will be hidden.</p>
 
-        <p>
-            <h4><code>&lt;input type="text"&gt;</code></h4> or simply <input> is a standard textbox. This can also have a value attribute, which sets the initial text in the textbox.
-        </p>
+        <p><code>&lt;input type="checkbox"&gt;</code>
+        <input type="checkbox"> is a checkbox, which can be toggled on and off by the user.</p>
 
-        <p>
-            <h4><code>&lt;input type="password"&gt;</code></h4>
-            <input type="password" value="hiddenpassword"> is similar to the textbox, but the characters typed in by the user will be hidden.
-        </p>
+        <p>This can also have a checked attribute <code>&lt;input type="checkbox" checked&gt;</code> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.</p>
 
-        <p>
-            <h4><code>&lt;input type="checkbox"&gt;</code></h4>
-            <input type="checkbox"> is a checkbox, which can be toggled on and off by the user.
-        </p>
+        <p><code>&lt;input type="radio"&gt;</code>is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.</p>
 
-        <p>
-            This can also have a checked attribute <code>&lt;input type="checkbox" checked&gt;</code> - the attribute doesn’t require a value), and makes the initial state of the check box to be switched on, as it were.
-        </p>
-
-        <p>
-            <h4><code>&lt;input type="radio"&gt;</code></h4>
-            is similar to a checkbox, but the user can only select one radio button in a group. This can also have a checked attribute.
-        </p>
-
-        <p>
-            <h4><code>&lt;input type="submit"&gt;</code></h4>
-             is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <input type="submit" value="Ooo. Look. Text on a button. Wow">.
-        </p>
-
-
-
+        <p><code>&lt;input type="submit"&gt;</code>is a button that when selected will submit the form. You can control the text that appears on the submit button with the value attribute, for example <input type="submit" value="Ooo. Look. Text on a button. Wow">.</p>
 
         <h4><code>&lt;textarea&gt;</code></h4>
 
-        <p>
-            The<code>textarea</code> is, basically, a large, multi-line textbox. The anticipated number of rows and columns can be defined with rows and cols attributes, although you can manipulate the size to your heart’s content using CSS.
+        <p>The<code>textarea</code> is, basically, a large, multi-line textbox. The anticipated number of rows and columns can be defined with rows and cols attributes, although you can manipulate the size to your heart’s content using CSS.
         </p>
 
         <p class='gist-code' data-gist="rhinocoders/8495ff61e3b95ffb9650"></p>
 
-        <p>
-            Any text you choose to place between the opening and closing tags (in this case “a big load of text”) will form the initial value of the text area.
+        <p>Any text you choose to place between the opening and closing tags (in this case “a big load of text”) will form the initial value of the text area.
         </p>
 
 
-        <h4>
-            <code>&lt;select&gt;</code>
-        </h4>
+        <h4><code>&lt;select&gt;</code></h4>
 
-        <p>
-            The<code>select</code> tag works with the <code>option</code> tag to make drop-down select boxes.
-        </p>
+        <p>The<code>select</code> tag works with the <code>option</code> tag to make drop-down select boxes.</p>
 
         <p class='gist-code' data-gist="rhinocoders/72b8e27dbc71e0f83ff1"></p>
 
-        <p>
-            When the form is submitted, the value of the selected option will be sent. This value will be the text between the selected opening and closing option tag unless an explicit value is specified with the value attribute, in which case this will be sent instead.
-        </p>
+        <p>When the form is submitted, the value of the selected option will be sent. This value will be the text between the selected opening and closing option tag unless an explicit value is specified with the value attribute, in which case this will be sent instead.</p>
 
-        <p>
-            So, in the above example, if the first item is selected, “Option 1” will be sent, if the third item is selected, “third option” will be sent.
-        </p>
+        <p>So, in the above example, if the first item is selected, “Option 1” will be sent, if the third item is selected, “third option” will be sent.</p>
 
-        <p>
-            Similar to the checked attribute of checkboxes and radio buttons, an option tag can also have a selected attribute, to start off with one of the items already being selected, eg.<!-- <option selected>Rodent</option> would pre-select “Rodent” from the items. -->
-        </p>
+        <p>Similar to the checked attribute of checkboxes and radio buttons, an option tag can also have a selected attribute, to start off with one of the items already being selected, eg.<!-- <option selected>Rodent</option> would pre-select “Rodent” from the items. --></p>
 
-        <h4>
-            <code>&lt;names&gt;</code>
-        </h4>
+        <h4><code>&lt;names&gt;</code></h4>
 
-        <p>
-            All of the tags mentioned above will look very nice presented on the page but if you hook up your form to a form-handling script, they will all be ignored. This is because the form fields need names. So to all of the fields, the attribute <code>name</code> needs to be added, for example  name="talkingsponge".
-        </p>
+        <p>All of the tags mentioned above will look very nice presented on the page but if you hook up your form to a form-handling script, they will all be ignored. This is because the form fields need names. So to all of the fields, the attribute <code>name</code> needs to be added, for example  name="talkingsponge".</p>
 
-        <p>
-            A form might look like the one below. (Note: this form will not work unless there is a “contactus.php” file, which is stated in the action attribute of the form tag, to handle the submitted date)
+        <p>A form might look like the one below. (Note: this form will not work unless there is a “contactus.php” file, which is stated in the action attribute of the form tag, to handle the submitted date)
         </p>
 
         <p class='gist-code' data-gist="rhinocoders/8caf3f5bd479de20b509"></p>
 
+        <div class="instruction-block">
+            <h2>Do it yourself!</h2>
+            <ol>
+                <li>In Sublime Text Edit, open your index.html file</li>
+                <li>Code a form to your page as shown above</li>
+                <li>Save your index.html file</li>
+            </ol>
+        </div>
 
-    </div>
+    </article>
 
 </section>

@@ -75,7 +75,6 @@ var lessons = {
 
     events: function(){
 
-
         var scrollTimer = null;
         $(window).scroll(function () {
             if (scrollTimer) {
@@ -83,7 +82,6 @@ var lessons = {
             }
             scrollTimer = setTimeout(lessons.handleScroll, 100);   // set new timer
         });
-
 
         $('.icon-up-circled2').on('click', function(){
             $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -119,8 +117,6 @@ var lessons = {
         });
 
         /* animations */
-
-
 
         $(document).on({
             mouseenter: function(){
