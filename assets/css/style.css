@@ -12057,3 +12057,19 @@ select.form-control {
 .pi-section-dark .pi-social-icons-simple.pi-base.pi-colored li a:hover {
   text-shadow: 0 1px 0 #20252e;
 }
+
+.instruction-block {
+  background-color: #21adde;
+  margin: 20px 0;
+  color: #fff;
+  padding: 20px;
+}
+
+.instruction-block ul {
+  padding: 0;
+  margin: 0;
+}
+
+.instruction-block ul li {
+  list-style: none;
+}
