@@ -46,7 +46,6 @@
     <p>Now let's take some time and create this page.</p> <p>Once you're done, let's save that as hello_world.html and preview in your browser by right clicking the saved file and choosing the firefox browser to preview the web page. If everything went well you should see your Hello World page.</p>
     <p>Now that we've created our Hello world page, did any of you have problems getting the page to display correctly?<br> In web development, often when we have an issue with a page rendering correctly or a script not working correctly it's a <strong>syntax</strong> error.<p>
 
-    <!-- <img src="/assets/img/lessons/html-101/syntax_error.jpg"> -->
     <h3>What is syntax?</h3>
 
     <dl class="definition">
@@ -57,7 +56,6 @@
     </dl>
 
     <h3>HTML Element Syntax</h3>
-    <!-- <p>HTML documents are defined by the HTML elements it contains.</p> -->
     <p>The elements of an HTML document need to be structured with the proper syntax in order for the page to be viewed correctly.</p>
     <ul>
         <li>An HTML element starts with a <b>start tag / opening tag</b> : &lt;p&gt;</li>
@@ -89,14 +87,9 @@
             <td>&nbsp;</td>
         </tr>
     </table>
-
+<br /><br />
 <h3>Common HTML Tags - Also known as Elements</h3>
-<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element.</p>
-<!-- <br />
-<p class="gist-code" data-gist="rhinocoders/44dcfe90c6ad12123be9"></p>
-<br/> -->
-
-<p>HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
+<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element. HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
 <h4>Container Tags / Element Examples: HTML4</h4>
 <table border="1" style="width:100%" class="demonstration-code">
     <tr style="background: #ccc;">
@@ -129,7 +122,7 @@
         </td>
     </tr>
 </table>
-<br><br>
+<br /><br />
 <h4>Format Tags / Element Examples: HTML4</h4>
 <table border="1" style="width:100%" class="demonstration-code">
     <tr style="background: #ccc;">
@@ -185,7 +178,6 @@
 </table>
 <br><br>
 
-
 <h4>Empty Tags / Element Examples: HTML4</h4>
 <p>Elements are referred to as empty they do not have content contained between an OPEN and CLOSE tags</p>
 <table border="1" style="width:100%" class="demonstration-code">
@@ -196,8 +188,8 @@
     </tr>
     <tr>
         <td>Image : &lt;img /&gt;</td>
-        <td>I'm an Image tag and I like to show you pictures like this &lt;img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!"&gt; in web pages.</td>
-        <td>I'm an Image tag and I like to show you pictures like this <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!"> in web pages.</td>
+        <td>I'm an Image tag and I like to show you pictures like this &lt;img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" in web pages.</td>
+        <td>I'm an Image tag and I like to show you pictures like this <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg"> in web pages.</td>
     </tr>
     <tr>
         <td>Break : &lt;br /&gt;</td>
@@ -252,54 +244,20 @@
     </tr>
 </table>
 
-
-<!-- 
-<p>This is a paragraph</p>
-<p>HTML also has text formatting tags like the strong tag which makes text <strong>bold</strong>.</p>
-<p>Another text formatting tag is the emphasis tags which renders the text in <em>italics</em></p>
-
- -->
-<!-- <p>Heading tags are another way to format text below we see the six heading tags</p>
-
-<h1>This is a h1 heading</h1>
-<h2>This is a h2 heading</h2>
-<h3>This is a h3 heading</h3>
-<h4>This is a h4 heading</h4>
-<h5>This is a h5 heading</h5>
-<h6>This is a h6 heading</h6> -->
-<!-- <p>A span element is used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span></p>
-<br /> -->
-<!-- <div style="background: #ccc;width:300px; height:100px;">
-  <p>A div is a container used to layout and contain elements</p>
-</div> -->
-
-
-<!-- <p>This is an anchor tag used to link to other web pages or other parts of the web page. <br />
-<a href="http://www.w3schools.com/" target="_blank">Click here to go to W3 Schools!</a></p><br />
- -->
-<!-- this is a comment great for leaving notes and clarifying the code -->
-<!-- <p>Below are examples of empty content elements</p>
-<p> This is an image tag which allows us to place pictures on the page.<br/>
-<img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" alt="Rhinocoders logo" title="Rhinocoders!!!!">
-</p>
-<p>The break tag is an empty content element <br /> It allows you to place line breaks in the copy</p>
- -->
 <h3>Exploring Element Attributes</h3>
 <p>HTML elements can have <b>attributes</b>, which provide additional information about the element. Atrributes are always contained within the starting tag of an element. Let's look at a couple of elements that contain attributes.</p>
 <p class="gist-code" data-gist="rhinocoders/057c0a95f8dbe7f5284f"></p>
 <br>
 <p>Our first example is the image tag, which contains a number of attribute tags that tell the browser different thinga about the image element.</p>
-<ul><b>Image Attributes</b>
-<li><b>Width and Height</b> - tells the browser the height and width of the image.</li>
-<li><b>Title</b> - acts as a caption for the image and is displayed on hover.</li>
-<li><b>Alt</b> - provides alternate text when the image element cannot be displayed. This element is also used by screen readers to read content to users that are visiually impaired.</li>
-<li><ul><b>Anchor tag Attributes</b>
-    <li><b>href</b> Provides the destination URL or location for the anchor tag</li>
-    <li><b>target</b> Provides the target for the link will it open in the same tab or window using target="_self"? Or will it open in a new tab or window, target="_blank"</li>
-</ul>
-</li>
-</ul>
-  <img src="/assets/img/lessons/html-101/Meta-tags.jpg">
+    <ul><b>Image Attributes</b>
+        <li><b>Width and Height</b> - tells the browser the height and width of the image.</li>
+        <li><b>Title</b> - acts as a caption for the image and is displayed on hover.</li>
+        <li><b>Alt</b> - provides alternate text when the image element cannot be displayed. This element is also used by screen readers to read content to users that are visiually impaired.</li> 
+        <li><b>Anchor tag Attributes</b>
+        <li><b>href</b> Provides the destination URL or location for the anchor tag</li>
+        <li><b>target</b> Provides the target for the link will it open in the same tab or window using target="_self"? Or will it open in a new tab or window, target="_blank"</li>
+    </ul>
+  <img src="/assets/img/lessons/html-101/Meta-tags.jpg" alt="MetaTags">
 <h3>What's a Meta tag and why are they important?</h3>
 <dl class="definition">
     <dt><span class="icon-book"></span> Metadata</dt>
