@@ -11,11 +11,13 @@
         },
         {
             "labelName" : "HTML5 Tags",
-            "section" : "intro-tags"
+            "section" : "intro-tags",
+            "source": "structure-source"
         },
         {
             "labelName" : "HTML Forms",
-            "section" : "intro-forms"
+            "section" : "intro-forms",
+            "source": "structure-source"
         },
         {
             "labelName" : "Testing &amp; Validation",
