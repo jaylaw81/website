@@ -63,10 +63,10 @@ var lessons = {
                 top: '0px'
             }, speed);
             $('#header').animate({
-                top: '48px'
+                top: '0px'
             }, speed);
             $('#navigation').animate({
-                top: '92px'
+                top: '42px'
             }, speed);
         }
 

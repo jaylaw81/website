@@ -83,7 +83,7 @@ a.external_link {
 
 section#header {
   position: fixed;
-  top: 48px;
+  top: 0px;
   left: 0;
   background-color: rgba(255,255,255,1);
   color: #333;
@@ -104,7 +104,7 @@ font-size: 30px;
 section#navigation {
 position: fixed;
 width: 100%;
-top: 92px;
+top: 42px;
 background-color: #21252b;
 color: white;
 left: 0px;
@@ -316,7 +316,7 @@ article#content {
   background: white;
   padding: 11px 43px 40px 43px;
   height: 100%;
-  top: 147px;
+  top: 100px;
 }
 
 
