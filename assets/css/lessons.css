@@ -385,6 +385,13 @@ article#content {
 }
 
 
+.side-by-side div.example hr {
+    border-color: #000000;
+    height: 1px;
+    margin: 0px;
+}
+
+
 article#content section {
   margin-bottom: 100px;
 }
