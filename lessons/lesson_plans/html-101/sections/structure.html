@@ -41,7 +41,7 @@
     </dl>
 
     <p class="gist-code" data-gist="rhinocoders/3d55d114602324ea5050"></p>
-    
+
     <div class="instruction-block">
         <h2>Do it yourself!</h2>
         <ol>
@@ -53,27 +53,6 @@
     </div>
 
     <i>Now that we've created our Hello world page, did any of you have problems getting the page to display correctly?<br /> In web development, often when we have an issue with a page rendering correctly or a script not working correctly it's a <strong>syntax</strong> error.</i>
-    <br /><br />
-
-    <img src="/assets/img/lessons/html-101/Meta-tags.jpg" alt="MetaTags">
-    <h3>What's a Meta tag and why are they important?</h3>
-    <dl class="definition">
-        <dt><span class="icon-book"></span> Metadata</dt>
-        <dd>
-            Metadata is "data about data". So that means we have descriptive information about our data object. For instance, contained within a .jpg or image file is more information about the picture like the date, time, and location where the image was taken. In the case of a website we use metadata or&lt;meta&gt; tags to describe our website and provide information about it. This helps search engines and users find our site.  Some common meta data attributes title, description, keywords and author. Let's take the time to fill out this information in your html template.
-        </dd>
-    </dl>
-
-    <p class="gist-code" data-gist="rhinocoders/9b83e354ac9dfeda34f5"></p>
-    <div class="instruction-block">
-        <h2>Do it yourself!</h2>
-        <ol>
-            <li>In Sublime Text Edit, open your index.html file</li>
-            <li>Code the meta data content as shown above</li>
-            <li>Save your index.html file</li>
-        </ol>
-    </div>
-
     <br /><br />
 
     <h3>What is syntax?</h3>
@@ -99,97 +78,43 @@
         <li>Most HTML elements can have <b>attributes</b> which we'll learn about later</li>
     </ul>
 
-    <p>Below is a table which gives us basic examples of the correct syntax.</p>
-    <table border="1" style="width:100%">
-        <tr style="background: #ccc;">
-            <th style="width:33%">Open - Start tag *</th>
-            <th style="width:33%">Element content</th>
-            <th>Close - End tag *</th>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>I'm a paragraph and I like to tell you things.</td>
-            <td>&lt;/p&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;br /&gt;</td>
-            <td>I don't have any content. All I do is create<br>a new line between other tags or content.</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
-<br /><br />
-<h3>Common HTML Tags - Also known as Elements</h3>
-<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element. HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
-<h4>Container Tags / Element Examples: HTML4</h4>
-<table border="1" style="width:100%" class="demonstration-code">
-    <tr style="background: #ccc;">
-        <th style="width:33%">Element</th>
-        <th style="width:33%">Code View</th>
-        <th style="width:33%">Rendered View</th>
-    </tr>
-    <tr>
-        <td>Paragraph : <code>&lt;p&gt;&lt;/p&gt;</code></td>
-        <td>&lt;p&gt;I'm a paragraph and I like to tell you things.&lt;/p&gt;</td>
-        <td><p>I'm a paragraph and I like to tell you things.</p></td>
-    </tr>
-    <tr>
-        <td>Div : <code>&lt;div&gt;&lt;/div&gt;</code></td>
-        <td>
+    <p>Below are some examples showing the correct syntax.</p>
+    <p class="gist-code" data-gist="rhinocoders/c839338079580891d39f"></p>
+
+
+    <h3>Common HTML Tags - Also known as Elements</h3>
+    <p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element. HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
+
+    <h4>Container Tags / Element Examples: HTML4</h4>
+
+    <div class="side-by-side">
+        <p class="gist-code" data-gist="rhinocoders/bb48b9aee9ceec6dc934"></p>
+        <div class="example">
+            <p>I'm a paragraph and I like to tell you things.</p>
+
             A div is a container element used to layout and contain other elements.
-            <br />&lt;div&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;My parent is a DIV and I am one of its first child.&lt;p&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;I'm one of the siblings - like a brother or sister.&lt;p&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;I'm the other sibling&lt;p&gt;<br />
-            &lt;/div&gt;
-        </td>
-        <td>
-            A div is a container used to layout and contain elements
-            <div style="background: #ccc;">
-              <p style="margin-top:0px;">Our parent is a DIV and I am its first-child.</p>
-              <p>I'm one of the siblings - like a brother or sister.</p>
-              <p>I'm the another sibling but they call me the last-child.</p>
+            <div>
+              <p>My parent is a DIV and I am one of its first child.<p>
+              <p>I'm one of the siblings - like a brother or sister.<p>
+              <p>I'm the other sibling<p>
             </div>
-        </td>
-    </tr>
-    <tr>
-        <td>Ordered List : <code>&lt;ol&gt;&lt;/ol&gt;</code></td>
-        <td>
+
             I'm an Ordered List and I will show you a numbered list - like a to-do list. Each line is calle a List Item.
-            <br />&lt;ol&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am also a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am the last list item&lt;/li&gt;<br />
-            &lt;/ol&gt;
-        </td>
-        <td>
-            I'm an Ordered List and I will show you a numbered list - like a to-do list. The element in each line is called a List Item.
             <ol>
-                <li>I am a list item</li>
-                <li>I am also a list item</li>
-                <li>I am the last list item</li>
+              <li>I am a list item</li>
+              <li>I am also a list item</li>
+              <li>I am the last list item</li>
             </ol>
-        </td>
-    </tr>
-    <tr>
-        <td>Unordered List : <code>&lt;ol&gt;&lt;/ol&gt;</code></td>
-        <td>
-            I'm an Unordered List and I will show you a list with symbols instead of numbers - like a check list. The element in each line is called a List Item.
-            <br />&lt;ul&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am also a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am the last list item&lt;/li&gt;<br />
-            &lt;/ul&gt;
-        </td>
-        <td>
+
             I'm an Unordered List and I will show you a list with symbols instead of numbers - like a check list. The element in each line is called a List Item.
             <ul>
-                <li>I am a list item</li>
-                <li>I am also a list item</li>
-                <li>I am the last list item</li>
+              <li>I am a list item</li>
+              <li>I am also a list item</li>
+              <li>I am the last list item</li>
             </ul>
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
+
 <br /><br />
 <h4>Format Tags / Element Examples: HTML4</h4>
 <table border="1" style="width:100%" class="demonstration-code">
@@ -311,7 +236,32 @@
         </td>
     </tr>
 </table>
-<br /><br />
+
+
+
+    <div class="image-caption">
+        <p>What's a Meta tag and why are they important?</p>
+        <img src="/assets/img/lessons/html-101/Meta-tags.jpg" alt="MetaTags">
+    </div>
+
+    <dl class="definition">
+        <dt><span class="icon-book"></span> Metadata</dt>
+        <dd>
+            Metadata is "data about data". So that means we have descriptive information about our data object. For instance, contained within a .jpg or image file is more information about the picture like the date, time, and location where the image was taken. In the case of a website we use metadata or&lt;meta&gt; tags to describe our website and provide information about it. This helps search engines and users find our site.  Some common meta data attributes title, description, keywords and author. Let's take the time to fill out this information in your html template.
+        </dd>
+    </dl>
+
+    <p class="gist-code" data-gist="rhinocoders/9b83e354ac9dfeda34f5"></p>
+    <div class="instruction-block">
+        <h2>Do it yourself!</h2>
+        <ol>
+            <li>In Sublime Text Edit, open your index.html file</li>
+            <li>Code the meta data content as shown above</li>
+            <li>Save your index.html file</li>
+        </ol>
+    </div>
+
+
 <h3>Exploring Element Attributes</h3>
 <p>HTML elements can have <b>attributes</b>, which provide additional information about the element. Atrributes are always contained within the starting tag of an element. Let's look at a couple of elements that contain attributes.</p>
 <p class="gist-code" data-gist="rhinocoders/057c0a95f8dbe7f5284f"></p>
@@ -320,7 +270,7 @@
 <ul><b>Image Attributes</b>
     <li><b>Width and Height</b> - tells the browser the height and width of the image.</li>
     <li><b>Title</b> - acts as a caption for the image and is displayed on hover.</li>
-    <li><b>Alt</b> - provides alternate text when the image element cannot be displayed. This element is also used by screen readers to read content to users that are visiually impaired.</li> 
+    <li><b>Alt</b> - provides alternate text when the image element cannot be displayed. This element is also used by screen readers to read content to users that are visiually impaired.</li>
     <li><b>Anchor tag Attributes</b>
     <li><b>href</b> Provides the destination URL or location for the anchor tag</li>
     <li><b>target</b> Provides the target for the link will it open in the same tab or window using target="_self"? Or will it open in a new tab or window, target="_blank"</li>

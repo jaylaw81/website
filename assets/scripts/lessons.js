@@ -99,6 +99,9 @@ var lessons = {
             $('#content section.section-open').removeClass('section-open').hide();
             nextContentSection.addClass('section-open').show();
             window.scrollTo(0, 0);
+            if(nextContentSection.find('.side-by-side')){
+                $('.side-by-side p.gist-code .file-data').css('height', $('.side-by-side p.gist-code .file-data').closest('div.side-by-side').height() );
+            }
             //console.log(nextSection);
         });
 
@@ -113,6 +116,9 @@ var lessons = {
             $('#content section.section-open').removeClass('section-open').hide();
             prevContentSection.addClass('section-open').show();
             window.scrollTo(0, 0);
+            if(prevContentSection.find('.side-by-side')){
+                $('.side-by-side p.gist-code .file-data').css('height', $('.side-by-side p.gist-code .file-data').closest('div.side-by-side').height() );
+            }
             //console.log(nextSection);
         });
 
@@ -126,30 +132,6 @@ var lessons = {
                 $(this).removeClass('animated hinge');
             }
         }, '.fall');
-
-
-
-        /*
-        $(document).on('click', '#navigation li', function(e){
-            e.preventDefault();
-            e.stopPropagation();
-            e.stopImmediatePropagation();
-            lessons.isScrolling = true;
-
-            $('#navigation li').removeClass('active');
-            $('span[class="icon-circle"]').attr('class', 'icon-circle blank');
-            $('span', this).attr('class', 'icon-circle');
-            $(this).addClass('active');
-
-            var anchor = $('a', this).attr("href");
-
-            $("html, body").animate({ scrollTop: $(anchor).offset().top - 50 }, "slow", function(){
-                lessons.activeSection = anchor;
-                lessons.isScrolling = false;
-            });
-
-        });
-*/
 
         $('.icon-reply').on('click', function(e){
             window.location = '/the-series/' + parentTrack + '/';
@@ -222,6 +204,7 @@ var lessons = {
                     head.appendChild(link);
                 }
                 $(el).append(data.div);
+
             });
 
         })
