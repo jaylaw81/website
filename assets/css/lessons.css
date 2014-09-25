@@ -320,6 +320,58 @@ article#content {
 }
 
 
+.side-by-side {
+  width: 100%;
+  float: left;
+  margin-bottom: 36px;
+  clear: both;
+}
+
+.side-by-side p.gist-code {
+  width: 45%;
+  margin-right: 2%;
+  float: left;
+}
+
+.side-by-side p.gist-code .file-data {
+  font-size: 13px !important;
+}
+
+.side-by-side p.gist-code .gist .gist-data {
+  height: 100%;
+}
+
+.side-by-side div.example {
+  width: 53%;
+  float: left;
+  background-color: #e1e1e1;
+  padding: 10px;
+  color: black;
+  box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.7);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.7);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.7);
+}
+
+.side-by-side div.example div {
+  background-color: #f2f2f2;
+  padding: 5px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+.side-by-side div.example:before {
+  content: 'Example';
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(0,0,0,.4);
+  width: 100%;
+  padding: 0 0 5px 0;
+  margin-bottom: 5px;
+  display: block;
+  color: #21adde;
+}
+
 
 article#content section {
   margin-bottom: 100px;

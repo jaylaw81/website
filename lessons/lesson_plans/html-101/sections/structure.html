@@ -78,97 +78,43 @@
         <li>Most HTML elements can have <b>attributes</b> which we'll learn about later</li>
     </ul>
 
-    <p>Below is a table which gives us basic examples of the correct syntax.</p>
-    <table border="1" style="width:100%">
-        <tr style="background: #ccc;">
-            <th style="width:33%">Open - Start tag *</th>
-            <th style="width:33%">Element content</th>
-            <th>Close - End tag *</th>
-        </tr>
-        <tr>
-            <td>&lt;p&gt;</td>
-            <td>I'm a paragraph and I like to tell you things.</td>
-            <td>&lt;/p&gt;</td>
-        </tr>
-        <tr>
-            <td>&lt;br /&gt;</td>
-            <td>I don't have any content. All I do is create<br>a new line between other tags or content.</td>
-            <td>&nbsp;</td>
-        </tr>
-    </table>
+    <p>Below are some examples showing the correct syntax.</p>
+    <p class="gist-code" data-gist="rhinocoders/c839338079580891d39f"></p>
+
 
     <h3>Common HTML Tags - Also known as Elements</h3>
-<p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element. HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
-<h4>Container Tags / Element Examples: HTML4</h4>
-<table border="1" style="width:100%" class="demonstration-code">
-    <tr style="background: #ccc;">
-        <th style="width:33%">Element</th>
-        <th style="width:33%">Code View</th>
-        <th style="width:33%">Rendered View</th>
-    </tr>
-    <tr>
-        <td>Paragraph : <code>&lt;p&gt;&lt;/p&gt;</code></td>
-        <td>&lt;p&gt;I'm a paragraph and I like to tell you things.&lt;/p&gt;</td>
-        <td><p>I'm a paragraph and I like to tell you things.</p></td>
-    </tr>
-    <tr>
-        <td>Div : <code>&lt;div&gt;&lt;/div&gt;</code></td>
-        <td>
+    <p>Next we are going to take a look at some common HTML tags used to mark up copy and place images. In the sections below we can see the actual mark up and how the browser renders each element. HTML elements can be used for structure and contain content or other elements or can be used for formatting content. The container element is known as the parent and the element being contained is known as the child. A group of elements inside of a container are known as siblings.</p>
+
+    <h4>Container Tags / Element Examples: HTML4</h4>
+
+    <div class="side-by-side">
+        <p class="gist-code" data-gist="rhinocoders/bb48b9aee9ceec6dc934"></p>
+        <div class="example">
+            <p>I'm a paragraph and I like to tell you things.</p>
+
             A div is a container element used to layout and contain other elements.
-            <br />&lt;div&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;My parent is a DIV and I am one of its first child.&lt;p&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;I'm one of the siblings - like a brother or sister.&lt;p&gt;<br />
-              &nbsp;&nbsp;&lt;p&gt;I'm the other sibling&lt;p&gt;<br />
-            &lt;/div&gt;
-        </td>
-        <td>
-            A div is a container used to layout and contain elements
-            <div style="background: #ccc;">
-              <p style="margin-top:0px;">Our parent is a DIV and I am its first-child.</p>
-              <p>I'm one of the siblings - like a brother or sister.</p>
-              <p>I'm the another sibling but they call me the last-child.</p>
+            <div>
+              <p>My parent is a DIV and I am one of its first child.<p>
+              <p>I'm one of the siblings - like a brother or sister.<p>
+              <p>I'm the other sibling<p>
             </div>
-        </td>
-    </tr>
-    <tr>
-        <td>Ordered List : <code>&lt;ol&gt;&lt;/ol&gt;</code></td>
-        <td>
+
             I'm an Ordered List and I will show you a numbered list - like a to-do list. Each line is calle a List Item.
-            <br />&lt;ol&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am also a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am the last list item&lt;/li&gt;<br />
-            &lt;/ol&gt;
-        </td>
-        <td>
-            I'm an Ordered List and I will show you a numbered list - like a to-do list. The element in each line is called a List Item.
             <ol>
-                <li>I am a list item</li>
-                <li>I am also a list item</li>
-                <li>I am the last list item</li>
+              <li>I am a list item</li>
+              <li>I am also a list item</li>
+              <li>I am the last list item</li>
             </ol>
-        </td>
-    </tr>
-    <tr>
-        <td>Unordered List : <code>&lt;ol&gt;&lt;/ol&gt;</code></td>
-        <td>
-            I'm an Unordered List and I will show you a list with symbols instead of numbers - like a check list. The element in each line is called a List Item.
-            <br />&lt;ul&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am also a list item&lt;/li&gt;<br />
-                &nbsp;&nbsp;&lt;li&gt;I am the last list item&lt;/li&gt;<br />
-            &lt;/ul&gt;
-        </td>
-        <td>
+
             I'm an Unordered List and I will show you a list with symbols instead of numbers - like a check list. The element in each line is called a List Item.
             <ul>
-                <li>I am a list item</li>
-                <li>I am also a list item</li>
-                <li>I am the last list item</li>
+              <li>I am a list item</li>
+              <li>I am also a list item</li>
+              <li>I am the last list item</li>
             </ul>
-        </td>
-    </tr>
-</table>
+        </div>
+    </div>
+
 <br /><br />
 <h4>Format Tags / Element Examples: HTML4</h4>
 <table border="1" style="width:100%" class="demonstration-code">
