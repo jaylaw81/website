@@ -121,12 +121,12 @@
         <p class="gist-code" data-gist="rhinocoders/89c42b7c1838536c1354"></p>
         <div class="example">
             I'm a span element and I'm used to group text inline and make changes to it. <span style="color:blue">Like turning the text blue!</span>
-
+            <br />
             I'm a <b>BOLD</b> tag and I make words look think and puffy.
-
+            <br />
             I'm a <i>Itallic</i> tag and I make words look like they are leaning forward.
-
-            I'm a <u>Underline</u> tag and I make words look like they have a line under them.
+            <br />
+            I'm a <u>Underline</u> tag and I make a line under words.
         </div>
     </div>
 
@@ -138,79 +138,55 @@
         <p class="gist-code" data-gist="rhinocoders/7452422564a2b4767147"></p>
         <div class="example">
             <h1>I am the largest of the headline tags</h1>
-
+            <br />
             <h2>I am the second largest headline</h2>
-
+            <br />
             <h3>I am the third largest headline</h3>
         </div>
     </div>
 
-<h4>Empty Tags / Element Examples: HTML4</h4>
-<p>Elements are referred to as empty they do not have content contained between an OPEN and CLOSE tags</p>
-<table border="1" style="width:100%" class="demonstration-code">
-    <tr style="background: #ccc;">
-        <th style="width:33%">Element</th>
-        <th style="width:33%">Code View</th>
-        <th style="width:33%">Rendered View</th>
-    </tr>
-    <tr>
-        <td>Image : <code>&lt;img /&gt;</code></td>
-        <td>I'm an Image tag and I like to show you pictures like this &lt;img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg" in web pages.</td>
-        <td>I'm an Image tag and I like to show you pictures like this <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg"> in web pages.</td>
-    </tr>
-    <tr>
-        <td>Break : <code>&lt;br /&gt;</code></td>
-        <td>I'm a Break tag &lt;br /&gt; I don't have any content. All I do is create&lt;br /&gt;a new line space&lt;br /&gt;between other tags or content.</td>
-        <td>I'm a Break tag <br /> I don't have any content. All I do is create<br />a new line space<br />between other tags or content.</td>
-    </tr>
-    <tr>
-        <td>Horizontal Row : <code>&lt;hr /&gt;</code></td>
-        <td>I'm a Horizontal Row tag and I don't have any content. All I do is create &lt;hr /&gt;a visible line&lt;hr /&gt;between other tags or content.</td>
-        <td>I'm a Horizontal Row tag and I don't have any content. All I do is create <hr />a visible line<hr />between other tags or content.</td>
-    </tr>
-</table>
-<br><br>
+    <h4>Empty Tags / Element Examples: HTML4</h4>
+    <p>Elements are referred to as empty they do not have content contained between an OPEN and CLOSE tags</p>
 
-<h4>Clickable Tags / Elements Examples: HTML4</h4>
-<table border="1" style="width:100%" class="demonstration-code">
-    <tr style="background: #ccc;">
-        <th style="width:33%">Element</th>
-        <th style="width:33%">Code View</th>
-        <th style="width:33%">Rendered View</th>
-    </tr>
-    <tr>
-        <td>Anchor : <code>&lt;a&gt;&lt;/a&gt;</code></td>
-        <td>I am an anchor tag and I am used to link to other web pages or other parts of the web page. &lt;a href=&quot;default.htm&quot;&gt;I'm a link - Click ME :)&lt;/a&gt;</td>
-        <td>I am an anchor tag and I am used to link to other web pages or other parts of the web page. <a href="#anchor-clicked">I'm a link - Click ME :)</a></td>
-    </tr>
-    <tr>
-        <td>Radio : <code>&lt;input type="radio"&gt;</code></td>
-        <td>
-            I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
-            &lt;input type="radio" name="kid" value="bobby"&gt;<label>Bobby</lable>
-            &lt;input type="radio" name="kid" value="jessica"&gt;&lt;label&gt;Jessica&lt;/lable&gt;
-        </td>
-        <td>
+
+
+
+
+
+    <div class="side-by-side">
+        <p class="gist-code" data-gist="rhinocoders/1e16d1142ebdab379348"></p>
+        <div class="example">
+            I'm an Image tag and I like to show you pictures like this 
+            <img alt="RhinoCoders" src="/assets/img/rhinocoders-logo.jpg"> in web pages.
+            <br />
+            I'm a Break tag <br /> I don't have any content. All I do is create
+            <br />
+            a new line space<br />
+            between other tags or content.
+            <br />
+            I'm a Horizontal Row tag and I don't have any content. All I do is create 
+            <hr />
+            a visible line
+            <hr />
+            between other tags or content.
+        </div>
+    </div>
+
+    <h4>Clickable Tags / Elements Examples: HTML4</h4>
+    <div class="side-by-side">
+        <p class="gist-code" data-gist="rhinocoders/19a935feb39fb25a7289"></p>
+        <div class="example">
+            I am an anchor tag and I am used to link to other web pages or other parts of the web page. <a href="#anchor-clicked">I'm a link - Click ME :)</a>
+            <br>
             I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
             <input type="radio" name="kid" value="bobby"><label>Bobby</lable>
             <input type="radio" name="kid" value="jessica"><label>Jessica</lable>
-        </td>
-    </tr>
-    <tr>
-        <td>Checkbox : <code>&lt;input type="checkbox"&gt;</code></td>
-        <td>
-            I am a Checkbox button and you will always see me with at least one sibling. We all want to play and all or none of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
-            &lt;input type="checkbox" name="kid" value="bobby"&gt;<label>Bobby</lable>
-            &lt;input type="checkbox" name="kid" value="jessica"&gt;&lt;label&gt;Jessica&lt;/lable&gt;
-        </td>
-        <td>
+            <br>
             I am a Radio button and you will always see me with at least one sibling. We all want to play but only one of us can be chosen. We always have labels and our label tells you who you are picking to play with.<br>
             <input type="checkbox" name="kid" value="bobby"><label>Bobby</lable>
             <input type="checkbox" name="kid" value="jessica"><label>Jessica</lable>
-        </td>
-    </tr>
-</table>
-
+        </div>
+    </div>
 
 
     <div class="image-caption">
