@@ -365,12 +365,13 @@ article#content {
   background: transparent !important;
   margin: 0 !important;
   padding: 0 !important;
+  font-weight: 100 !important;
 }
 article#content .side-by-side div.example h3 {
   font-size: 3em !important;
   color: black !important;
   background: transparent !important;
-  font-weight: 400;
+  font-weight: 100 !important;
   text-transform: none;
   margin: 0 !important;
   padding: 0 !important;
@@ -384,6 +385,7 @@ article#content .side-by-side div.example h3 {
   background: transparent !important;
   margin: 0 !important;
   padding: 0 !important;
+  font-weight: 100 !important;
 }
 .side-by-side div.example h5 {
   font-size: 1em !important;
@@ -391,6 +393,7 @@ article#content .side-by-side div.example h3 {
   background: transparent !important;
   margin: 0 !important;
   padding: 0 !important;
+  font-weight: 100 !important;
 }
 .side-by-side div.example h6 {
   font-size: .9em !important;
@@ -398,6 +401,7 @@ article#content .side-by-side div.example h3 {
   background: transparent !important;
   margin: 0 !important;
   padding: 0 !important;
+  font-weight: 100 !important;
 }
 
 .side-by-side div.example div {
