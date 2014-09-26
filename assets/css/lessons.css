@@ -547,12 +547,12 @@ left: 5px;
   }
 
   .side-by-side .gist-code {
-    width: 100%;
+    width: 100% !important;
   }
 
   .side-by-side .example {
     clear: both;
-    width: 100%;
+    width: 100% !important;
   }
 
 
