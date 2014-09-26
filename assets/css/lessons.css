@@ -546,6 +546,10 @@ left: 5px;
     z-index: 9999;
   }
 
+  .side-by-side .example {
+    clear: both;
+  }
+
   .home a {
     display: block;
   }
