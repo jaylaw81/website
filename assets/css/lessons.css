@@ -599,6 +599,14 @@ left: 5px;
 
 @media only screen and (min-width : 320px) and (max-width : 480px)  {
 
+  .instruction-block {
+    background-color: #21adde;
+    background-image: none;
+    margin: 20px 0;
+    color: #fff;
+    padding: 20px;
+  }
+
   .home {
     display: block;
     float: left;
