@@ -584,8 +584,35 @@ left: 5px;
 }
 
 .home {
-  display: none;
-}
+    display: block;
+    float: left;
+    margin-left: -10px;
+    margin-right: 5px;
+
+    padding: 5px;
+    position: relative;
+    top: -5px;
+    left: -2px;
+    cursor: pointer;
+    z-index: 9999;
+  }
+
+  .home a {
+    display: block;
+  }
+
+
+  .home:hover {
+
+  }
+
+  .home:hover i {
+    color: #22ACDC;
+  }
+
+  .home i {
+    color: #ccc;
+  }
 
 .instruction-block {
   background: #21adde url(/assets/img/horns-white.png) no-repeat right 53px;
@@ -613,7 +640,18 @@ left: 5px;
     padding: 20px;
   }
 
-  .home {
+
+
+  .side-by-side .gist-code {
+    width: 100% !important;
+  }
+
+  .side-by-side .example {
+    clear: both;
+    width: 100% !important;
+  }
+
+ .home {
     display: block;
     float: left;
     margin-left: -10px;
@@ -627,17 +665,6 @@ left: 5px;
     cursor: pointer;
     z-index: 9999;
   }
-
-  .side-by-side .gist-code {
-    width: 100% !important;
-  }
-
-  .side-by-side .example {
-    clear: both;
-    width: 100% !important;
-  }
-
-
 
   .home a {
     display: block;
