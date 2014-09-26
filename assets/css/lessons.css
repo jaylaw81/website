@@ -456,6 +456,10 @@ article#content h3 {
   font-weight: 600;
 }
 
+article#content h3:not(:first-of-type){
+  margin-top: 100px;
+}
+
 article#content h5 {
   font-weight: 600;
   color: #21adde;
