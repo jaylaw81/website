@@ -366,10 +366,12 @@ article#content {
   margin: 0 !important;
   padding: 0 !important;
 }
-.side-by-side div.example h3 {
+article#content .side-by-side div.example h3 {
   font-size: 3em !important;
   color: black !important;
   background: transparent !important;
+  font-weight: 400;
+  text-transform: none;
   margin: 0 !important;
   padding: 0 !important;
 }
