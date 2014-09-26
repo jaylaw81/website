@@ -99,9 +99,7 @@ var lessons = {
             $('#content section.section-open').removeClass('section-open').hide();
             nextContentSection.addClass('section-open').show();
             window.scrollTo(0, 0);
-            if(nextContentSection.find('.side-by-side')){
-                $('.side-by-side p.gist-code .file-data').css('height', $('.side-by-side p.gist-code .file-data').closest('div.side-by-side').height() );
-            }
+
             //console.log(nextSection);
         });
 
@@ -116,9 +114,7 @@ var lessons = {
             $('#content section.section-open').removeClass('section-open').hide();
             prevContentSection.addClass('section-open').show();
             window.scrollTo(0, 0);
-            if(prevContentSection.find('.side-by-side')){
-                $('.side-by-side p.gist-code .file-data').css('height', $('.side-by-side p.gist-code .file-data').closest('div.side-by-side').height() );
-            }
+
             //console.log(nextSection);
         });
 
