@@ -615,6 +615,7 @@ left: 5px;
   }
 
 .instruction-block {
+  clear: both;
   background: #21adde url(/assets/img/horns-white.png) no-repeat right 53px;
   margin: 20px 0;
   color: #fff;
