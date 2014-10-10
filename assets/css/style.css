@@ -12054,7 +12054,9 @@ select.form-control {
 .pi-section-dark .pi-social-icons-simple.pi-base.pi-colored li a:hover {
   text-shadow: 0 1px 0 #20252e;
 }
-
+.video-parent {
+  background-color: #efefef;
+}
 .video-container {
   width: 70%;
   margin: 0 auto;
