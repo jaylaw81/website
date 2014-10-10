@@ -30,6 +30,9 @@
   .pi-center-text-3xs-only.pull-right {
     float: none !important;
   }
+  .video-container {
+    width: 90%;
+  }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .pi-hidden-2xs-only {
@@ -46,6 +49,9 @@
   }
   .pi-center-text-2xs-only.pull-right {
     float: none !important;
+  }
+  .video-container {
+    width: 90%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
