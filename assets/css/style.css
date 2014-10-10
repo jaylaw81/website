@@ -12076,3 +12076,19 @@ select.form-control {
     top: 0;
     width: 100%;
 }
+
+@media (max-width: 319px) {
+  .video-container {
+    width: 90%;
+  }
+}
+@media (min-width: 320px) and (max-width: 479px) {
+  .video-container {
+    width: 90%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .video-container {
+    width: 70%;
+  }
+}
