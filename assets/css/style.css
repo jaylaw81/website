@@ -28,6 +28,11 @@ iframe .ebeventlocation {
   color: #333;
 }
 
+.video-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .rhinocoders-video {
   height: 0;
     overflow: hidden;
