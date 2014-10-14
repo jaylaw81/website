@@ -1,8 +1,38 @@
 {
     "navItems" : [
         {
-            "labelName" : "Intro",
+            "labelName" : "Introduction",
             "section" : "intro-css"
+        },
+        {
+            "labelName" : "CSS Structure",
+            "section" : "structure",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Native Styles",
+            "section" : "nativestyles",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Pseudo Selector Tags",
+            "section" : "pseudos",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "CSS3",
+            "section" : "css3",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Styling The Gallery",
+            "section" : "gallery",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Media Queries",
+            "section" : "mediaqueries",
+            "source": "structure-source"
         },
         {
             "labelName" : "Study Materials",
