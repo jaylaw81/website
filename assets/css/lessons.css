@@ -515,6 +515,10 @@ article#content img {
   position: relative;
 }
 
+article#content .css-diagram img{
+  min-width: 0px;
+}
+
 article#content .image-caption {
   position: relative;
   width: 100%;
