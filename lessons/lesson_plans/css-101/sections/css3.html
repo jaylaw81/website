@@ -6,18 +6,23 @@
 		<div class="example">
 			<div class="box-class"></div>
 			<div class="box-class shadow-blur"></div><br/><br/>
+			<div class="box-class shadow-noblur-spread"></div><br/><br/>
 			<div class="box-class shadow-blur-spread"></div><br/><br/>
 			<div class="box-class shadow-blur-spread-inset"></div>
 		</div>
 		<style>
-		div.box-class {
-		  background-color:yellow;
-		  height:100px;
-		  width:300px;	
+		.side-by-side div.example div.box-class {
+		    height: 100px;
+		    margin-left: 3%;
+		    width: 92%;
 		}
 
 		div.box-class.shadow-blur {
 		  box-shadow:10px 10px 5px #000000;	
+		}
+
+		div.box-class.shadow-noblur-spread {
+		  box-shadow:10px 10px 0px 20px #000000;	
 		}
 
 		div.box-class.shadow-blur-spread {
