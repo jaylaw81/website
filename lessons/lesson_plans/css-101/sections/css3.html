@@ -1,3 +1,32 @@
 <section>
     <h3 id="css3" class="section">CSS3</h3>
+
+    <div class="side-by-side">
+		<p class="gist-code" data-gist="rhinocoders/0868e30994cceb9a54be"></p>
+		<div class="example">
+			<div class="box-class"></div>
+			<div class="box-class shadow-blur"></div><br/><br/>
+			<div class="box-class shadow-blur-spread"></div><br/><br/>
+			<div class="box-class shadow-blur-spread-inset"></div>
+		</div>
+		<style>
+		div.box-class {
+		  background-color:yellow;
+		  height:100px;
+		  width:300px;	
+		}
+
+		div.box-class.shadow-blur {
+		  box-shadow:10px 10px 5px #000000;	
+		}
+
+		div.box-class.shadow-blur-spread {
+		  box-shadow:10px 10px 5px 20px #000000;	
+		}
+
+		div.box-class.shadow-blur-spread-inset {
+		  box-shadow:10px 10px 5px 20px #000000 inset;	
+		}
+		</style>
+	</div>
 </section>
