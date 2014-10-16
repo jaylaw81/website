@@ -352,46 +352,52 @@ article#content {
   -moz-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.7);
 }
 
-  .side-by-side > .css-shadows > .box-class {
-      height: 100px;
+  .side-by-side > .css-shadows > .box-class,
+  .side-by-side > .css-shadows > .textbox-class {
+      height: 35px;
       margin-left: 3%;
+      margin-bottom: 4%;
       width: 92%;
   }
 
   div.box-class.shadow-blur {
-    box-shadow:10px 10px 5px #000000; 
-  }
-
-  div.box-class.shadow-blur-left {
-    box-shadow:10px 10px 5px #000000; 
-  }
-
-  div.box-class.shadow-blur-right {
-    box-shadow:10px 10px 5px #000000; 
+    box-shadow:10px 10px 5px #21adde; 
   }
 
   div.box-class.shadow-noblur {
-    box-shadow:10px 10px 0px #000000;    
+    box-shadow: 10px 10px 0 #21adde
+  }
+
+  div.box-class.shadow-blur-left {
+    box-shadow: -10px 0px 5px #21adde; 
+  }
+
+  div.box-class.shadow-blur-right {
+    box-shadow: 10px 0 5px #21adde
   }
 
   div.box-class.shadow-blur-spread {
-    box-shadow:20px 20px 5px 20px #000000;    
+    box-shadow: 15px 15px 5px 10px #21adde;
   }
 
-  div.textbox-class.shadow-positive {
-    text-shadow:5px 5px #0000FF; 
-  }
-
-  div.textbox-class.shadow-blur {
-      text-shadow:5px 5px 3px #0000FF; 
-  }
-
-  div.textbox-class.shadow-blur-large {
-      text-shadow:5px 5px 10px #0000FF;  
+  div.textbox-class{
+    font-weight: bold;
   }
 
   div.textbox-class.shadow-negative {
-      text-shadow:-5px -5px #0000FF; 
+      text-shadow: -2.5px -1.5px #21adde; 
+  }
+
+  div.textbox-class.shadow-positive {
+    text-shadow: 2.5px 1.5px #21adde;
+  }
+
+  div.textbox-class.shadow-blur {
+      text-shadow: 3px 3px 2px #21adde; 
+  }
+
+  div.textbox-class.shadow-blur-large {
+      text-shadow: 3px 3px 10px  #21adde;  
   }
 
 
