@@ -362,12 +362,36 @@ article#content {
     box-shadow:10px 10px 5px #000000; 
   }
 
-  div.box-class.shadow-noblur-spread {
-    box-shadow:10px 10px 0px 20px #000000;    
+  div.box-class.shadow-blur-left {
+    box-shadow:10px 10px 5px #000000; 
+  }
+
+  div.box-class.shadow-blur-right {
+    box-shadow:10px 10px 5px #000000; 
+  }
+
+  div.box-class.shadow-noblur {
+    box-shadow:10px 10px 0px #000000;    
   }
 
   div.box-class.shadow-blur-spread {
-    box-shadow:10px 10px 5px 20px #000000;    
+    box-shadow:20px 20px 5px 20px #000000;    
+  }
+
+  div.textbox-class.shadow-positive {
+    text-shadow:5px 5px #0000FF; 
+  }
+
+  div.textbox-class.shadow-blur {
+      text-shadow:5px 5px 3px #0000FF; 
+  }
+
+  div.textbox-class.shadow-blur-large {
+      text-shadow:5px 5px 10px #0000FF;  
+  }
+
+  div.textbox-class.shadow-negative {
+      text-shadow:-5px -5px #0000FF; 
   }
 
 

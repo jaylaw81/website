@@ -1,6 +1,23 @@
 <section>
-	<h3 id="css3-section" class="section">CSS3</h3>
 
+<<<<<<< HEAD
+	<p id="structure-source" style="display:none" class="gist-code popup" data-gist="rhinocoders/aa1bbeef9ed4128eea21"></p>
+	
+	<article>
+		<h3 id="css3-section" class="section">CSS3</h3>
+
+		<div class="side-by-side">
+			<p class="gist-code" data-gist="rhinocoders/0868e30994cceb9a54be"></p>
+			<div class="example css-shadows">
+				<div class="box-class">I'm just a box without a showdow.</div>
+				<div class="box-class shadow-blur">My box's shadow has a blur added to it.</div><br/>
+				<div class="box-class shadow-noblur-spread">My box's shadow now has no blur but I spread the shadow out more.</div><br/><br/>
+				<div class="box-class shadow-blur-spread">My box's shadow has a blur and it is spread out.</div><br/><br/>
+			</div>
+		</div>
+		
+	</article>
+=======
 
 	<h4>CSS3 The Box Shadow</h4>
 	<p class="gist-code" data-gist="rhinocoders/fcd094d0fa403159beb3"></p>
@@ -45,4 +62,5 @@
 	        <li>Save your files and reload your HTML page to see the changes.</li>
 	    </ol>
 	</div>
+>>>>>>> 05e33ccbd31064256a02e4b57a0b9c37c6ce657d
 </section>
