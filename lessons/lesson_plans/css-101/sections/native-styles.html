@@ -2,7 +2,7 @@
 
     <h3 id="nativestyles" class="section">Native Styles</h3>
 
-    <div style="width:610px;height:525px; float:left;">
+    <div style="width:610px;height:450px; float:left;">
         <img src="/assets/img/lessons/css-101/without_css.png" alt="native styles" />
     </div>
 
@@ -27,7 +27,6 @@
     </div>
 
 <xmp>
-    <!--
     <!DOCTYPE html>
 
         <html>
@@ -49,7 +48,7 @@
         </div>
         </body>
         </html>
--->
+
 </xmp>
 
     <p>In the above snippet with no associated CSS stylings, browsers will give unordered list a default bullet, make
@@ -58,25 +57,23 @@
         different browsers have different default stylings (one might create a margin of 10px on a h1 while another uses
         15px).</p>
 
-    <img src="/assets/img/lessons/css-101/bundler.png" alt="default styles"/>
-
     <p>Now how to fix these style problem caused by the browser. One way is to simply check the page as you develop and
         if anything seems wrong then you can correct it during -- let's say a heading wasn't positioned where you
         thought you told it to for example, it may be a good idea to set margin: 0; to see if the default margin was
         affecting with your positioning, and if this was causing the problem then you can tweak the margin from there.
         once you've cleared out browser styles, you can start styling same</p>
 
+    <img src="/assets/img/lessons/css-101/bundler.png" alt="default styles" style="margin-bottom: 10px; width: 619px; height: 297px;" />
+
     <p>NORMALIZE: Some people, however, go all out and completely remove any default styles that the browser might have
         so they have complete control, this is usually achieved using something called a "Reset Stylesheet". This
         neutralizes (or normalizes) browser defaults and sets consistent style across. THen you have a clean and
         sensible default slate to work from</p>
 
-    <pre>
+<xmp>
 
-        <!--
-        /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
 */
 
 html, body, div, span, applet, object, iframe,
@@ -92,38 +89,36 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+display: block;
 }
 body {
-	line-height: 1;
+line-height: 1;
 }
 ol, ul {
-	list-style: none;
+list-style: none;
 }
 blockquote, q {
-	quotes: none;
+quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+content: '';
+content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+border-collapse: collapse;
+border-spacing: 0;
 }
-
-        -->
-    </pre>
+</xmp>
 
 </section>
