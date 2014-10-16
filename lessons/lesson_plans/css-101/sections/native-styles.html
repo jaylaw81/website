@@ -1,3 +1,105 @@
 <section>
     <h3 id="nativestyles" class="section">Native Styles</h3>
+    <p>Have you ever opened an HTML file that wasn't controlled by a style sheet? Chances are, if you have, that it looked something like this.</p>
+
+    <img src="/assets/img/lessons/css-101/without_css.png" alt="native styles"/>
+
+    <p>It sometimes referred to as 'unstyled content'. While it certainly looks unstyled, but that's not entirely accurate. Before developers were allowed to control HTML pages through Cascading Style Sheets, browsers had some way of displaying HTML content visually that means it added styling (naturally) on some elements. </p>
+
+    <p>When you write CSS, one of the things you are actually doing is overriding those default browser styles and replacing them with how you want the page to look,choose your own fonts, what size your text should display etc,.</p>
+
+    <p>Every browser has their own way of default styling. This is both useful and annoying in different situations. Let's say for example you created a basic webpage that looked something like the following:</p>
+
+<pre>
+    <!--
+    <!DOCTYPE html>
+
+        <html>
+        <head>
+            <title>Untitled</title>
+        </head>
+        <body>
+        <div id="container">
+            <ul id="nav">
+                <li>Home</li>
+                <li>About</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
+            </ul>
+
+            <div id="mainContent">
+                <h1>Main Content!</h1>
+            </div>
+        </div>
+        </body>
+        </html>
+-->
+</pre>
+
+    <p>In the above snippet with no associated CSS stylings, browsers will give unordered list a default bullet, make the H1 bigger and bolder than other text on the page, with extra margins around it (most noticeably on the h1). This is all well and good for the most part, however in some cases it can cause some unintended behavior because different browsers have different default stylings (one might create a margin of 10px on a h1 while another uses 15px).</p>
+
+
+
+    <img src="/assets/img/lessons/css-101/bundler.png" alt="default styles" />
+
+    <p>Now how to fix these style problem caused by the browser. One way is to simply check the page as you develop and if anything seems wrong then you can correct it during -- let's say a heading wasn't positioned where you thought you told it to for example, it may be a good idea to set margin: 0; to see if the default margin was affecting with your positioning, and if this was causing the problem then you can tweak the margin from there. once you've cleared out browser styles, you can start styling same</p>
+
+    <p>NORMALIZE: Some people, however, go all out and completely remove any default styles that the browser might have so they have complete control, this is usually achieved using something called a "Reset Stylesheet".  This neutralizes (or normalizes) browser defaults and sets consistent style across. THen you have a clean and sensible default slate to work from</p>
+
+    <pre>
+
+        <!--
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+        -->
+    </pre>
+
+
 </section>
