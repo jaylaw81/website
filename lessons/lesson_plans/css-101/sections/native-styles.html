@@ -5,7 +5,11 @@
     <p>Have you ever opened an HTML file that was not controlled by a style sheet? Chances are, if you have, that it
         looked something like this.</p>
 
-    <div style="float: left; width: 40%">
+    <div style="width:610px;height:525px; float:left;">
+        <img src="/assets/img/lessons/css-101/without_css.png" alt="native styles" />
+    </div>
+
+    <div style="float: left; margin-left:20px; width: 50%">
 
         <p>It sometimes referred to as 'unstyled content'. While it certainly looks unstyled, but that's not entirely
             accurate. Before developers were allowed to control HTML pages through Cascading Style Sheets, browsers had some
@@ -15,16 +19,14 @@
             replacing them with how you want the page to look,choose your own fonts, what size your text should display
             etc,.</p>
 
+    </div>
+
+    <div style="clear: both;">
         <p>Every browser has their own way of default styling. This is both useful and annoying in different situations.
             Let's say for example you created a basic webpage that looked something like the following:</p>
-
     </div>
 
-    <div style="width:610px;height:525px; float:left;">
-        <img src="/assets/img/lessons/css-101/without_css.png" alt="native styles" />
-    </div>
-
-<pre>
+<xmp>
     <!--
     <!DOCTYPE html>
 
@@ -48,7 +50,7 @@
         </body>
         </html>
 -->
-</pre>
+</xmp>
 
     <p>In the above snippet with no associated CSS stylings, browsers will give unordered list a default bullet, make
         the H1 bigger and bolder than other text on the page, with extra margins around it (most noticeably on the h1).
