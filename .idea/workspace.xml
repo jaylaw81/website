@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee8cf19-474d-4cdb-a5c9-dc36aaa6f861" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/img/lessons/css-101/without_css.png" afterPath="$PROJECT_DIR$/assets/img/lessons/css-101/without_css.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/native-styles.html" afterPath="$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/native-styles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/structure.html" afterPath="$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/structure.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="website.iws" />
@@ -42,8 +40,8 @@
       <file leaf-file-name="native-styles.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/native-styles.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82417583" vertical-offset="60" max-vertical-offset="435">
-              <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.7692308" vertical-offset="45" max-vertical-offset="465">
+              <caret line="66" column="80" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#section#0;n#!!top" expanded="false" />
@@ -54,7 +52,7 @@
                 <element signature="n#xmp#0;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#p#0;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#p#1;n#section#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#img#0;n#section#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#section#0;n#!!top" expanded="true" />
                 <element signature="n#p#2;n#section#0;n#!!top" expanded="false" />
                 <element signature="n#xmp#1;n#section#0;n#!!top" expanded="false" />
               </folding>
@@ -419,7 +417,7 @@
             <element signature="n#xmp#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#p#1;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#section#0;n#!!top" expanded="true" />
             <element signature="n#p#2;n#section#0;n#!!top" expanded="false" />
             <element signature="n#xmp#1;n#section#0;n#!!top" expanded="false" />
           </folding>
@@ -533,8 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lessons/lesson_plans/css-101/sections/native-styles.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82417583" vertical-offset="60" max-vertical-offset="435">
-          <caret line="71" column="4" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.7692308" vertical-offset="45" max-vertical-offset="465">
+          <caret line="66" column="80" selection-start-line="66" selection-start-column="80" selection-end-line="66" selection-end-column="80" />
           <folding>
             <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#section#0;n#!!top" expanded="false" />
@@ -545,7 +543,7 @@
             <element signature="n#xmp#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#p#0;n#section#0;n#!!top" expanded="false" />
             <element signature="n#p#1;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#section#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#section#0;n#!!top" expanded="true" />
             <element signature="n#p#2;n#section#0;n#!!top" expanded="false" />
             <element signature="n#xmp#1;n#section#0;n#!!top" expanded="false" />
           </folding>
