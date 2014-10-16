@@ -352,14 +352,36 @@ article#content {
   -moz-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.7);
 }
 
-  .side-by-side > .css-shadows > .box-class,
-  .side-by-side > .css-shadows > .textbox-class {
+  .side-by-side > .css-examples > .box-class,
+  .side-by-side > .css-examples > .textbox-class {
       height: 35px;
       margin-left: 3%;
       margin-bottom: 4%;
       width: 92%;
   }
 
+  .box-class, .textbox-class {
+    border: thin solid;
+    border-radius: 10px 0;
+}
+
+  div.box-class.radius-corder {
+    border-radius: 5px;
+  }
+
+  div.box-class.radius-side {
+    border-radius: 20px;
+  }
+  
+  div.box-class.radius-percent {
+    border-radius: 0 100% 0 0;
+  }
+
+  div.box-class.radius-pixel-halves {
+    border-radius: 10px 0px;
+  }
+
+  
   div.box-class.shadow-blur {
     box-shadow:10px 10px 5px #21adde; 
   }
