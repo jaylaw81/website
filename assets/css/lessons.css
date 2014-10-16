@@ -379,19 +379,19 @@ article#content {
   }
 
   div.textbox-class.shadow-positive {
-    box-shadow:5px 5px #0000FF; 
+    text-shadow:5px 5px #0000FF; 
   }
 
   div.textbox-class.shadow-blur {
-      box-shadow:5px 5px 3px #0000FF; 
+      text-shadow:5px 5px 3px #0000FF; 
   }
 
   div.textbox-class.shadow-blur-large {
-      box-shadow:5px 5px 10px #0000FF;  
+      text-shadow:5px 5px 10px #0000FF;  
   }
 
   div.textbox-class.shadow-negative {
-      box-shadow:-5px -5px #0000FF; 
+      text-shadow:-5px -5px #0000FF; 
   }
 
 
