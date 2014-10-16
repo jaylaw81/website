@@ -1,79 +1,101 @@
 <section>
-    <h3 id="structure" class="section">CSS Structure</h3>
 
-    <h4>CSS Back Story</h4>
+    <p id="structure-source" style="display:none" class="gist-code popup" data-gist="rhinocoders/aa1bbeef9ed4128eea21"></p>
 
-    <p>CSS (Cascading Style Sheet) is code used to control the visible and invisible properties of the elements and content in your page. It is commonly used to control the page's color scheme, the structural layout of the page and shape of elements. It can also be used to control properties of fonts (uniquely created alphabet characters) and the different states of an anchor. There are many advanced ways to use CSS that you may learn in your journey of learning web design and development.</p>
+    <article>
+        <h3 id="structure" class="section">CSS Structure</h3>
 
-    <p>A part of understanding the structure is also understanding the page. The same way you would read an email, the browser also reads the code in a page - From top to bottom. Generally a web page will have three parts to it anatomy - Header area, Body area and Footer area. This is the same way the browser reads a CSS file.</p>
-    <p>In many of our discussions about code we have mentioned the parent and child relationships between elements. With this thought you can understand that from parent to child there can also be inheritance - Like eye color. If we set the "color" property of blue "#0000ff" to the &lt;body&gt; element, then all the text in the page would inherit the color and turn blue.</p>
+        <h4>CSS Back Story</h4>
 
-    <h4>How CSS selectors work</h4>
-    <p>A CSS rule set consists of a selector and a declaration block:</p>
-    <div class="css-diagram">
-        <img style="width:569px;height:119px;" alt="CSS selector" src="/assets/img/lessons/css-101/css-syntax.gif">
-    </div>
-    <ul>
-		<li>The selector points to the HTML element you want to style.</li>
-		<li>The declaration block contains one or more declarations separated by semicolons.</li>
-		<li>Each declaration includes a property name and a value, separated by a colon.</li>
-    </ul>
+        <p>CSS (Cascading Style Sheet) is code used to control the visible and invisible properties of the elements and content in your page. It is commonly used to control the page's color scheme, the structural layout of the page and shape of elements. It can also be used to control properties of fonts (uniquely created alphabet characters) and the different states of an anchor. There are many advanced ways to use CSS that you may learn in your journey of learning web design and development.</p>
 
-    <p>A CSS declaration always ends with a semicolon, and declaration groups are surrounded by curly braces:</p>
+        <p>A part of understanding the structure is also understanding the page. The same way you would read an email, the browser also reads the code in a page - From top to bottom. Generally a web page will have three parts to it anatomy - Header area, Body area and Footer area. This is the same way the browser reads a CSS file.</p>
+        <p>In many of our discussions about code we have mentioned the parent and child relationships between elements. With this thought you can understand that from parent to child there can also be inheritance - Like eye color. If we set the "color" property of blue "#0000ff" to the &lt;body&gt; element, then all the text in the page would inherit the color and turn blue.</p>
 
-    <p class="gist-code" data-gist="rhinocoders/ac945dc82794a80a7b8e"></p>
+    </article>
 
-    <h4>CSS to HTML connection</h4>
-    <p>Using the example structure above we can begin to understand how to read CSS. Of the structure examples above, below we have examples of using a "class" to assign styles from CSS to HTML.</p>
+    <article>
 
-    <p class="gist-code" data-gist="rhinocoders/d8a30682d6fc23ace7d8"></p>	
+        <h4>How CSS selectors work</h4>
+        <p>A CSS rule set consists of a selector and a declaration block:</p>
+        <div class="css-diagram">
+            <img style="width:569px;height:119px;" alt="CSS selector" src="/assets/img/lessons/css-101/css-syntax.gif">
+        </div>
+        <ul>
+    		<li>The selector points to the HTML element you want to style.</li>
+    		<li>The declaration block contains one or more declarations separated by semicolons.</li>
+    		<li>Each declaration includes a property name and a value, separated by a colon.</li>
+        </ul>
 
-	<div class="instruction-block">
-	    <h2>Do it yourself!</h2>
-	    <ol>
-	        <li>In Sublime Text Edit, open the CSS & HTML files you have created</li>
-            <li>You will need to first add the class attribute to your &lt;header&gt; tag and give it the value of "main-header".</li>
-	        <li>You can copy and paste the styles from here to your file and then change any values to see differences.</li>
-	        <li>Save your files and reload your HTML page to see the changes.</li>
-	    </ol>
-	</div>
-	 
+        <p>A CSS declaration always ends with a semicolon, and declaration groups are surrounded by curly braces:</p>
 
-    <h4>CSS to HTML - Declaration Structure</h4>
-    <p>In many cases you may find that general style rules are created for specific types elements or other selectors. The Declaration Structure enables the programmer to control which style rules are more important to a specific element or selector that may already have other style rules applied.</p>    
-    <p class="gist-code" data-gist="rhinocoders/9c398e826bfc8ca018f5"></p>
+        <p class="gist-code" data-gist="rhinocoders/ac945dc82794a80a7b8e"></p>
 
-    <div class="instruction-block">
-        <h2>Do it yourself!</h2>
-        <ol>
-            <li>In Sublime Text Edit, open the CSS & HTML files you have created</li>
-            <li>In your &lt;header&gt; tag with the class value of "main-header" you will need to add the &lt;img&gt; with a class of "logo".</li>
-            <li>You can copy and paste the styles from here to your file and then change any values to see differences.</li>
-            <li>Save your files and reload your HTML page to see the changes.</li>
-        </ol>
-    </div>
+    </article>
 
-    <h4>CSS - Weighting Scale</h4>
-    <p>The Declaration Structure may appear to not work at times. There can be a few reasons why, but the common solution can be found in the weight scale.</p>    
-    <p class="gist-code" data-gist="rhinocoders/b00dba8c0f0065e790f2"></p>
+    <article>
+
+        <h4>CSS to HTML connection</h4>
+        <p>Using the example structure above we can begin to understand how to read CSS. Of the structure examples above, below we have examples of using a "class" to assign styles from CSS to HTML.</p>
+
+        <p class="gist-code" data-gist="rhinocoders/d8a30682d6fc23ace7d8"></p>	
+
+    	<div class="instruction-block">
+    	    <h2>Do it yourself!</h2>
+    	    <ol>
+    	        <li>In Sublime Text Edit, open the CSS & HTML files you have created</li>
+                <li>You will need to first add the class attribute to your &lt;header&gt; tag and give it the value of "main-header".</li>
+    	        <li>You can copy and paste the styles from here to your file and then change any values to see differences.</li>
+    	        <li>Save your files and reload your HTML page to see the changes.</li>
+    	    </ol>
+    	</div>
+
+    </article>
+	
+    <article>
+
+        <h4>CSS to HTML - Declaration Structure</h4>
+        <p>In many cases you may find that general style rules are created for specific types elements or other selectors. The Declaration Structure enables the programmer to control which style rules are more important to a specific element or selector that may already have other style rules applied.</p>    
+        <p class="gist-code" data-gist="rhinocoders/9c398e826bfc8ca018f5"></p>
+
+        <div class="instruction-block">
+            <h2>Do it yourself!</h2>
+            <ol>
+                <li>In Sublime Text Edit, open the CSS & HTML files you have created</li>
+                <li>In your &lt;header&gt; tag with the class value of "main-header" you will need to add the &lt;img&gt; with a class of "logo".</li>
+                <li>You can copy and paste the styles from here to your file and then change any values to see differences.</li>
+                <li>Save your files and reload your HTML page to see the changes.</li>
+            </ol>
+        </div>
+
+    </article>
+
+    <article>
+
+        <h4>CSS - Weighting Scale</h4>
+        <p>The Declaration Structure may appear to not work at times. There can be a few reasons why, but the common solution can be found in the weight scale.</p>    
+        <p class="gist-code" data-gist="rhinocoders/b00dba8c0f0065e790f2"></p>
     
+    </article>
+    
+    <article>
 
+        <h4>Units of Measure - Commonly Used in Web Pages</h4>
+        <p>When controlling the shape and size of elements on the page there are Unites of Measure available for you to use. Below are the three most commonly used units.</p>
+        <ul class="table-layout">
+        	<li>
+        		<div>% | Percentage - Usually used to control the percentage of an element's width or height of it's parent width or height.</div>
+        	</li>
+        	<li>
+        		<div>px | pixels (a dot on the computer screen) - Screen resolution is generally 32 pixels per inch.</div>
+        	</li>
+        	<li>
+        		<div>em | 1em is equal to the current font size. 2em means 2 times the size of the current font. E.g., if an element is displayed with a font of 12 pt, then '2em' is 24 pt. The 'em' is a very useful unit in CSS, since it can adapt automatically to the font that the reader uses</div>
+        	</li>
+        </ul>
+        <p class="gist-code" data-gist="rhinocoders/85bd24180f967139a966"></p>
 
-
-    <h4>Units of Measure - Commonly Used in Web Pages</h4>
-    <p>When controlling the shape and size of elements on the page there are Unites of Measure available for you to use. Below are the three most commonly used units.</p>
-    <ul class="table-layout">
-    	<li>
-    		<div>% | Percentage - Usually used to control the percentage of an element's width or height of it's parent width or height.</div>
-    	</li>
-    	<li>
-    		<div>px | pixels (a dot on the computer screen) - Screen resolution is generally 32 pixels per inch.</div>
-    	</li>
-    	<li>
-    		<div>em | 1em is equal to the current font size. 2em means 2 times the size of the current font. E.g., if an element is displayed with a font of 12 pt, then '2em' is 24 pt. The 'em' is a very useful unit in CSS, since it can adapt automatically to the font that the reader uses</div>
-    	</li>
-    </ul>
-    <p class="gist-code" data-gist="rhinocoders/85bd24180f967139a966"></p>
+    </article>
     
     <div class="instruction-block">
         <h2>Do it yourself!</h2>
