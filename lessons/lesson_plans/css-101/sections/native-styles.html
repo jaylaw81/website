@@ -13,7 +13,7 @@
             replace them with how you want the page to look, choose your own fonts, what size your text should display
             etc.</p>
 
-        <img src="/assets/img/lessons/css-101/without_css_.jpg" alt="native styles" style="min-width:75%; margin-bottom: 20px; " />
+        <img src="/assets/img/lessons/css-101/without_css_.jpg" alt="native styles" style="min-width:50%; margin-bottom: 20px; " />
 
     </article>
     
@@ -26,7 +26,7 @@
 
         <p>In the above snippet with no CSS styling, browsers will give unordered list a default bullet, make the H1 bigger and bolder than other text on the page, with extra margins around it. This is all well and good for the most part, however in some cases it can cause some unintended behavior because different browsers have different stylings (one might create a margin of 10px on a h1 while another uses 15px).</p>
 
-        <p>Now how to fix these style problem caused by the browser. One way is to simply check the page as you develop and if anything seems wrong then you can correct it during -- let's say a heading wasn't positioned where you thought you told it to for example, it may be a good idea to set margin: 0; to see if the default margin was affecting with your positioning, and if this was causing the problem then you can tweak the margin from there. once you've cleared out browser styles, you can start styling same<./p>
+        <p>Now how to fix these style problem caused by the browser. One way is to simply check the page as you develop and if anything seems wrong then you can correct it during -- let's say a heading wasn't positioned where you thought you told it to for example, it may be a good idea to set margin: 0; to see if the default margin was affecting with your positioning, and if this was causing the problem then you can tweak the margin from there. once you've cleared out browser styles, you can start styling same. </p>
         <img src="/assets/img/lessons/css-101/bundler.png" alt="default styles" />
 
     </article>
@@ -47,15 +47,15 @@
             <dt><span class="icon-book"></span> Box Model</dt>
             <dd><strong>All HTML elements on the page is like a rectangular box.</strong>The <strong>CSS box model</strong> is essentially a box that wraps around HTML elements, and it consists of: <em>width, height, padding, borders, margin, and the actual content.</em></dd>
         </dl>
-
-        <img src="/assets/img/lessons/css-101/box-model.gif" alt="box model" style ="float:left;" />
-        <img src="/assets/img/lessons/css-101/box-model-01.jpg" alt="box model" />
+        <br/>
+        <img src="/assets/img/lessons/css-101/box-model.gif" alt="box model" style ="min-width:75%;" />
+        <img src="/assets/img/lessons/css-101/box-model-01.jpg" alt="box model" style="min-width:50%;" />
 
         <p>If you don't give it a width (and that box is a block level element), then the width will remain 100% full. If padding or borders are not given, they are either browser default value or zero (likely if you are using a css reset). </p>
 
         <p class="gist-code" data-gist="rhinocoders/aaf176c05eb8b98da37e"></p>
 
-        <img src="/assets/img/lessons/css-101/css-box-model_box-model-diagram.png" alt="box model"/>
+        <img src="/assets/img/lessons/css-101/css-box-model_box-model-diagram.png" alt="box model" style="min-width:25%;" />
 
         <blockquote>The size of the box itself is calculated like this:</blockquote>
 
