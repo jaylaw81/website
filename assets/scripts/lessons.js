@@ -40,7 +40,7 @@ var lessons = {
             $(elem).clone().appendTo('.glossary');
         });
 
-        $('div.glossary dl').sort('dt' , {order:'asc'} );
+        $('div.glossary dl').tsort('dt' , {order:'asc'} );
     },
 
     handleScroll: function(){
