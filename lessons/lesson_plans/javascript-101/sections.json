@@ -1,8 +1,28 @@
 {
     "navItems" : [
         {
-            "labelName" : "Intro",
+            "labelName" : "Introduction",
             "section" : "intro-js"
+        },
+        {
+            "labelName" : "JS Variables",
+            "section" : "structure",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Loops",
+            "section" : "loops",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Conditionals",
+            "section" : "conditionals",
+            "source": "structure-source"
+        },
+        {
+            "labelName" : "Functions",
+            "section" : "functions",
+            "source": "structure-source"
         },
         {
             "labelName" : "Study Materials",
