@@ -10,6 +10,11 @@
             "source": "structure-source"
         },
         {
+            "labelName" : "Operators",
+            "section" : "operators",
+            "source": "structure-source"
+        },
+        {
             "labelName" : "Loops",
             "section" : "loops",
             "source": "structure-source"
