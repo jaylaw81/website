@@ -1,0 +1,113 @@
+
+body { 
+	background-color: #FF1800;
+
+}
+
+.main-header .logo {
+    max-width: 120px;
+    width: 75%;
+}
+
+.main-header,
+.section-contianer,
+.main-footer{
+	background-color: #2824DC;
+	margin: 0px auto;
+	padding:20px;
+	width:90%;
+}
+
+.main-header {
+    background-color: #FFFF16;
+}
+
+.section-contianer .headline {
+	width:350px;
+	height:225px;
+	padding:20px;
+	border:5px solid #ffffff;
+	margin:50px;
+	border-radius: 15px;
+
+}
+img {
+    border: 3px solid red;
+}
+.box{
+	width:300px;
+	height:200px;
+	padding:10px 20px 30px 40px;
+	border:3px solid red;
+	margin:15px;
+	border-radius: 50%;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+ 
+.clearfix:after {
+	clear: both;
+}
+ 
+.photo-gallery {
+	margin: 0;
+	padding: 0;
+}
+.photo-gallery li {
+	float: left;
+	list-style: none outside none;
+	height: 165px;
+	overflow: hidden;
+	position: relative;
+	width: 25%;
+}
+.photo-gallery li .photo {
+	height: auto;
+	max-height: 165px;
+	width: 100%;
+}
+.main-header .nav {
+	display: inline-block;
+	float: right;
+}
+.main-header .nav .nav-links {
+	margin: 40px 0 0 0;
+	padding: 0;
+}
+ 
+.main-header .nav .nav-links .link {
+	display: inline;
+	margin-left: 10px;
+}
+ 
+.main-header .nav .nav-links .link a {
+	color: #000;
+	padding: 10px;
+	-webkit-transition: all, 0.2s, ease-in-out;
+	-moz-transition: all, 0.2s, ease-in-out;
+	-o-transition: all, 0.2s, ease-in-out;
+	transition: all, 0.2s, ease-in-out;
+	text-decoration: none;
+}
+.main-header .nav .nav-links .link a:hover {
+	color: #fff;
+	background-color: #333;
+}
+body {
+  background-color: black;
+}
+ 
+@media only screen and (min-width : 320px)  and (max-width : 480px) {
+  body {
+    background-color: black;
+  }
+.section-container {
+	display:none;
+}
+
+.photo-gallery li {
+	width: 50%;
+}
+

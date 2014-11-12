@@ -1,0 +1,100 @@
+body {
+background-color: #FF1FD6;  
+}
+.main-header,
+.section-container,
+.main-footer {
+	width: 90%;
+	margin: 0 auto;
+	background-color: #13AAEB;
+	padding: 20px;
+}
+
+.main-header {
+    background-color: #13AAEB;
+    margin: 0 auto;
+    width: 90%; 
+    padding: 20px;
+}
+.main-header .logo {
+    max-width: 120px;
+    width: 75%; 
+    padding: 20px;
+}
+
+.nav {
+    display: inline-block;
+}
+.nav .nav-links {
+    margin: 25px 0 0 0;
+    padding: 0;
+}
+ 
+.nav .nav-links .link {
+    display: inline;
+    margin-left: 10px;
+}
+ 
+.nav .nav-links .link a {
+    color: #000;
+    padding: 10px;
+    -webkit-transition: all, 0.2s, ease-in-out;
+    -moz-transition: all, 0.2s, ease-in-out;
+    -o-transition: all, 0.2s, ease-in-out;
+    transition: all, 0.2s, ease-in-out;
+    text-decoration: none;
+}
+.nav .nav-links .link a:hover {
+    color: #fff;
+    background-color: #FF1FD6;
+}
+
+section p {
+    font-size: 25px;
+   background-color: #8F28A8;
+   width: 80%; 
+}
+h1,h3 {
+    font-size: 30px;
+}
+.video {
+    margin: 0 auto;
+}
+
+.box {
+    width:250px;
+    height:250px;
+    padding: 10px 20px 30px 40px;
+    border: 3px dotted blue;
+    margin: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+ 
+.clearfix:after {
+    clear: both;
+}
+ 
+.photo-gallery {
+    margin: 0;
+    padding: 0;
+}
+
+.photo-gallery li {
+    float: left;
+    list-style: none outside none;
+    max-height: 165px;
+    overflow: hidden;
+    position: relative;
+    width: 25%;
+}
+
+.photo-gallery li .photo {
+    height: auto;
+    width: 100%;
+}

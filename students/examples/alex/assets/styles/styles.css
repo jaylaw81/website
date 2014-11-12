@@ -1,0 +1,22 @@
+
+body{
+	background-color:#2E2EFE;
+}
+
+.main-header .logo{
+	max-width: 180px;
+	width: 90%;
+	padding: 20px 20px 20px 20px;
+}
+.main-header, 
+.section-container,
+.main-footer{
+	background-color:#ffffff;
+	margin:0 auto;
+	padding: 20px;
+	width: 90%;
+}
+.main-header{
+	background-color:#0080FF;
+	
+}
