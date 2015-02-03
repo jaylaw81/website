@@ -55,7 +55,7 @@ $(document).ready(function(){
         var name = $("#rc-contact-form .form-control-name, .pi-footer-form .form-control-name").val();
         var email = $("#rc-contact-form .form-control-email, .pi-footer-form .form-control-email").val();
         var mess = $("#rc-contact-form .form-control-message, .pi-footer-form .form-control-message").val();
-        var valid = $("#rc-contact-form .form-control-valid, .pi-footer-form .form-control-valid").val();
+        var valid = $("#rc-contact-form .form-control-valid").val();
 
         if(name == "" || email == "" || mess == "" || valid == "" || valid != "5") {
 
