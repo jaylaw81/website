@@ -14,17 +14,10 @@ $mess = mysql_real_escape_string($_POST['mess']);
 if(empty($mess)) {
     header("location: ../../contact-rhinocoders/?upd=f")
 }
-$valid = mysql_real_escape_string($_POST['valid']);
-if(empty($valid)) {
-    header("location: ../../contact-rhinocoders/?upd=f")
-} elseif($valid != '5') {
-    header("location: ../../contact-rhinocoders/?upd=f")
-} else {
-    $info = array(
-        'name' => $name,
-        'email' => $email,
-        'mess' => $mess
-    );
-    send_contact($info);
-}
+$info = array(
+    'name' => $name,
+    'email' => $email,
+    'mess' => $mess
+);
+send_contact($info);
 ?>

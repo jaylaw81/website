@@ -67,8 +67,7 @@ $(document).ready(function(){
                 "/assets/resources/contact.php", {
                     name: name,
                     email: email,
-                    mess: mess,
-                    valid: valid
+                    mess: mess
                 },
 
                 function(response) {
