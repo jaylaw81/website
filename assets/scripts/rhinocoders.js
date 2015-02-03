@@ -55,8 +55,9 @@ $(document).ready(function(){
         var name = $("#rc-contact-form .form-control-name, .pi-footer-form .form-control-name").val();
         var email = $("#rc-contact-form .form-control-email, .pi-footer-form .form-control-email").val();
         var mess = $("#rc-contact-form .form-control-message, .pi-footer-form .form-control-message").val();
+        var valid = $("#rc-contact-form .form-control-valid, .pi-footer-form .form-control-valid").val();
 
-        if(name == "" || email == "" || mess == "") {
+        if(name == "" || email == "" || mess == "" || valid == "" || valid != "5") {
 
             $(".pi-contact-form .error-message, .pi-footer-form .error-message").slideDown(700).delay(2000).slideUp(300);
 
@@ -66,7 +67,8 @@ $(document).ready(function(){
                 "/assets/resources/contact.php", {
                     name: name,
                     email: email,
-                    mess: mess
+                    mess: mess,
+                    valid: valid
                 },
 
                 function(response) {
