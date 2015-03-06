@@ -157,7 +157,8 @@ body {
     margin-left: 10px;
 }
 
-.main-header .nav .nav-links .link a {
+.main-header .nav .nav-links .link a,
+.main-footer .footer-links li a {
     color: #fff;
     padding: 10px;
     -webkit-transition: all, 0.2s, ease-in-out;
@@ -166,7 +167,8 @@ body {
     transition: all, 0.2s, ease-in-out;
     text-decoration: none;
 }
-.main-header .nav .nav-links .link a:hover {
+.main-header .nav .nav-links .link a:hover,
+.main-footer .footer-links li a:hover {
     color: #999;
     background-color: #333;
 }
