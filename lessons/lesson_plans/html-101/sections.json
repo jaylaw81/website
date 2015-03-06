@@ -14,11 +14,6 @@
             "section" : "intro-tags",
             "source": "structure-source"
         },
-        // {
-        //     "labelName" : "HTML Forms",
-        //     "section" : "intro-forms",
-        //     "source": "structure-source"
-        // },
         {
             "labelName" : "Testing &amp; Validation",
             "section" : "intro-testing"
